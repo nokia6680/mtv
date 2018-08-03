@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  background-color: $bg-white;
+
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $base-font-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font: {
+    family: $base-font;
+    size: $main-title;
+    weight: 600;
+  }
+
+  color: $text-white;
+  line-height: 54px;
+
+  text-transform: uppercase;
+}
+
+h2 {
+  font: {
+    family: $base-font;
+    size: $main-title;
+    weight: 400;
+  }
+
+  color: $text-black;
+  line-height: 54px;
+}
+
+h3 {
+  font: {
+    family: $base-font;
+    size: $secondary-title;
+    weight: 400;
+  }
+
+  color: $text-black;
+  line-height: 48px;
+}
