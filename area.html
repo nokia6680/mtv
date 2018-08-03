@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>MTV | XII Лучших Зрителей России</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="header__nav header-nav">
+			<button class="header-nav__howto" type="button">Как участвовать</button>
+			<!--Блок персонального кабинета-->
+			<div class="header-nav__cabinet header-cabinet">
+				<!--Планка результата зарегистрированного пользователя-->
+				<div class="header-cabinet__result cabinet-result">
+					<b class="cabinet-result__quantity">2&nbsp;700</b>
+					<b class="cabinet-result__points">баллов</b>
+				</div>
+				<!--Блок входа в учетную запись-->
+				<div class="header-cabinet__details cabinet-details">
+					<a class="cabinet-details__link" href="#" target="_self">
+						<img class="cabinet-details__photo" src="img/personal-photo.png" />
+						<p class="cabinet-details__name">Константин Константиновский</p>
+					</a>
+				</div>
+			</div>
+			<!--Гамбургер для мобильного-->
+			<div class="header-nav__opener header-opener header-nav__opener--closed" id="menuToggle">
+				<input type="checkbox" />
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+			</div>
+		</nav>
+	</header>
+  <main class="main">
+    <!--Интро блок-->
+    <section class="main__intro intro">
+      <div class="intro__name">
+        <img class="intro__pic" src="img/secondary-logo.png" />
+      </div>
+      <div class="intro__info">
+        <h2 class="intro__title intro__title--watch">Смотри MTV с 13 августа, чтобы узнать секретное слово</h2>
+      </div>
+      <div class="intro__logo">
+        <a class="intro__link" href="#" target="_self">
+          <img class="intro__img" src="img/logo.png" />
+        </a>
+      </div>
+    </section>
+    <section class="main__start start">
+      <h2 class="visually-hidden start__title--watch">Секция ввода слова</h2>
+      <!--Форма регистрации-->
+      <form class="start__form start-form start-form--enter" method="post" action="#">
+        <ul class="start-form__list form-list">
+          <li class="form-list__item form-item">
+            <label class="form-item__label" for="secret"></label>
+            <input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
+          </li>
+        </ul>
+      </form>
+      <!--Блок управляющих кнопок-->
+      <div class="start__controls start-controls">
+        <button class="start-controls__submit" type="submit">Отправить</button>
+      </div>
+    </section>
+    <!--Секция списков топ юзеров и городов-->
+    <section class="main__ranking ranking">
+      <!--Список топ-участников-->
+      <div class="ranking__users rank-users">
+        <header class="rank-users__header rank-header">
+          <b class="rank-header__title">Топ 12 участников</b>
+          <b class="rank-header__points">Баллы</b>
+        </header>
+        <ul class="rank-users__list rank-list">
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">01</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">1320</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">02</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">1200</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">03</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">1100</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">04</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">1000</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">05</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">999</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">06</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">777</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">07</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">666</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">08</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">555</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">09</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">444</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">10</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">333</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">11</b>
+            <span class="rank-item__name">Валерий Леонтьев</span>
+            <b class="rank-item__points">222</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">12</b>
+            <span class="rank-item__name">Иван Иванов</span>
+            <b class="rank-item__points">111</b>
+          </li>
+        </ul>
+      </div>
+      <!--Список топ-городов-->
+      <div class="ranking__users rank-cities">
+        <header class="rank-cities__header rank-header">
+          <b class="rank-header__title">Топ 3 городов</b>
+          <b class="rank-header__points">Баллы</b>
+        </header>
+        <ul class="rank-cities__list rank-list">
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">01</b>
+            <span class="rank-item__name">Угрюмовск</span>
+            <b class="rank-item__percent">30%</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">02</b>
+            <span class="rank-item__name">Заунывовск</span>
+            <b class="rank-item__points">20%</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">03</b>
+            <span class="rank-item__name">Екатеринбург</span>
+            <b class="rank-item__points">12%</b>
+          </li>
+          <!--Single item-->
+          <li class="rank-list__item">
+            <b class="rank-item__nr">03</b>
+            <span class="rank-item__name">Москва</span>
+            <b class="rank-item__points">12%</b>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__copyright footer-copyright">
+        <p class="footer-copyright__description">
+          MTV Russia
+        </p>
+      </div>
+    </div>
+    <!--Правая часть футера-->
+    <div class="footer__rules footer-rules">
+      <a class="footer-rules__link footer-rules__link--person" href="#" target="_self">Персональные данные</a>
+      <a class="footer-rules__link footer-rules__link--main" href="#" target="_self">Правила конкурса</a>
+      <button class="footer-rules__btn footer-rules__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
+      <button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+    </div>
+  </footer>
+</body>
+
+</html>

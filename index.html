@@ -16,15 +16,109 @@
 </head>
 
 <body>
-	<header class="page-header">
-
+	<header class="header">
+		<nav class="header__nav header-nav">
+			<button class="header-nav__howto" type="button">Как участвовать</button>
+			<!--Блок персонального кабинета-->
+			<div class="header-nav__cabinet header-cabinet">
+				<!--Планка результата зарегистрированного пользователя-->
+				<div class="header-cabinet__result cabinet-result">
+					<b class="cabinet-result__quantity">2&nbsp;700</b>
+					<b class="cabinet-result__points">баллов</b>
+				</div>
+				<!--Блок входа в учетную запись-->
+				<div class="header-cabinet__details cabinet-details">
+					<a class="cabinet-details__link" href="#" target="_self">
+						<img class="cabinet-details__photo" src="img/personal-photo.png" />
+						<p class="cabinet-details__name">Константин Константиновский</p>
+					</a>
+				</div>
+			</div>
+			<!--Гамбургер для мобильного-->
+			<div class="header-nav__opener header-opener header-nav__opener--closed" id="menuToggle">
+				<input type="checkbox" />
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+			</div>
+		</nav>
 	</header>
-	<main class="page-main">
-
+	<main class="main">
+		<!--Интро блок-->
+		<section class="main__intro intro">
+			<div class="intro__name">
+				<img class="intro__pic" src="img/secondary-logo.png" />
+			</div>
+			<div class="intro__info">
+				<h2 class="intro__title intro__title--authorize">Для участия в конкурсе необходимо авторизоваться</h2>
+			</div>
+			<div class="intro__logo">
+				<a class="intro__link" href="#" target="_self">
+					<img class="intro__img" src="img/logo.png" />
+				</a>
+			</div>
+		</section>
+		<!--Блок формы регистрации-->
+		<section class="main__start start">
+			<h2 class="visually-hidden">Секция регистрации нового пользователя или входа уже существующего</h2>
+			<!--Форма регистрации-->
+			<form class="start__form start-form" method="post" action="#">
+				<ul class="start-form__list form-list">
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="email"></label>
+						<input class="form-item__input" type="email" name="email" id="email" placeholder="E-mail" />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="name"></label>
+						<input class="form-item__input" type="text" name="name" id="name" placeholder="Имя" />
+					</li>
+					<li class="form-list__item form-item">
+						<label class="form-item__label" for="password"></label>
+						<input class="form-item__input" type="password" name="password" id="password" placeholder="Пароль" />
+					</li>
+				</ul>
+			</form>
+			<!--Блок управляющих кнопок-->
+			<div class="start__controls start-controls">
+				<button class="start-controls__signin" type="button">Войти</button>
+				<button class="start-controls__signup" type="submit">Регистрация</button>
+				<!--Список чекбоксов для принятия условий-->
+				<ul class="start-controls__list start-list">
+					<li class="start-list__item start-item">
+						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" />
+						<label class="start-item__label" for="agree1">С правилами конкурса ознакомлен</label>
+					</li>
+					<li class="start-list__item start-item">
+						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" />
+						<label class="start-item__label" for="agree2">Пользовательское соглашение прочитал</label>
+					</li>
+				</ul>
+				<!--Альтернативный вход через соцсети-->
+				<div class="start-controls__social start-social">
+					<b class="start-social__title">Войти через соц.сети</b>
+					<button class="start-social__btn start-social__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
+					<button class="start-social__btn start-social__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+				</div>
+			</div>
+		</section>
 	</main>
 	<!--Футер-->
-	<footer class="page-footer">
-
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="footer__copyright footer-copyright">
+				<p class="footer-copyright__description">
+					MTV Russia
+				</p>
+			</div>
+		</div>
+		<!--Правая часть футера-->
+		<div class="footer__rules footer-rules">
+			<a class="footer-rules__link footer-rules__link--person" href="#" target="_self">Персональные данные</a>
+			<a class="footer-rules__link footer-rules__link--main" href="#" target="_self">Правила конкурса</a>
+			<button class="footer-rules__btn footer-rules__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
+			<button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+		</div>
 	</footer>
 </body>
+
 </html>

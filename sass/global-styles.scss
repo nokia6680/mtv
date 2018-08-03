@@ -21,7 +21,7 @@ html {
 
 body {
   min-width: 320px;
-  background-color: $bg-white;
+  background-color: $bg-body;
 
   font-family: $base-font;
   font-size: $base-font-size;
@@ -32,39 +32,4 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  font: {
-    family: $base-font;
-    size: $main-title;
-    weight: 600;
-  }
-
-  color: $text-white;
-  line-height: 54px;
-
-  text-transform: uppercase;
-}
-
-h2 {
-  font: {
-    family: $base-font;
-    size: $main-title;
-    weight: 400;
-  }
-
-  color: $text-black;
-  line-height: 54px;
-}
-
-h3 {
-  font: {
-    family: $base-font;
-    size: $secondary-title;
-    weight: 400;
-  }
-
-  color: $text-black;
-  line-height: 48px;
 }
