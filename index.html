@@ -18,7 +18,6 @@
 <body>
 	<header class="header">
 		<nav class="header__nav header-nav">
-			<button class="header-nav__howto--mobile" type="button"><i class="fa fa-exclamation-circle"></i></button>
 			<button class="header-nav__howto" type="button">Как участвовать</button>
 			<!--Лого для мобильной версии-->
 			<div class="header-nav__logo">
@@ -26,8 +25,16 @@
 					<img class="header-nav__pic" src="img/logo-main.svg" />
 				</a>
 			</div>
+			<!--Кнопка гамбургер-->
+			<div class="header-nav__opener" id="menuToggle">
+		    <input type="checkbox" />
+		    <span id="span1"></span>
+		    <span id="span2"></span>
+		    <span id="span3"></span>
+			</div>
 			<!--Блок персонального кабинета-->
 			<div class="header-nav__cabinet header-cabinet">
+				<button class="header-nav__login" type="button"><i class="fa fa-user"></i></button>
 				<!--Планка результата зарегистрированного пользователя-->
 				<div class="header-cabinet__result cabinet-result">
 					<b class="cabinet-result__quantity">2&nbsp;700</b>
@@ -39,8 +46,6 @@
 					<p class="cabinet-details__name">Константин Константиновский</p>
 				</div>
 			</div>
-			<!--Вход в интерфейс игрока-->
-			<button class="header-nav__login" type="button"><i class="fa fa-user"></i></button>
 		</nav>
 	</header>
 	<!--Основное содержание страницы-->
@@ -63,6 +68,22 @@
 		<!--Блок формы регистрации или входа для незарегистрированных пользователей-->
 		<section class="main__start start">
 			<h2 class="visually-hidden">Секция регистрации нового пользователя или входа уже существующего</h2>
+			<!--Список кнопок для выбора "войти или регистрация"-->
+			<div class="start__toggle start-toggle">
+				<!--Список кнопок для выбора "войти или регистрация"-->
+				<ul class="start-toggle__list toggle-list">
+					<li class="toggle-list__item toggle-item toggle-item--enter">
+						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
+						<input class="visually-hidden toggle-item__radio" type="radio" id="enter" name="btn" value="enter" aria-required="true" onchange="Selected(this)" checked />
+						<label class="toggle-item__label" for="enter">Войти</label>
+					</li>
+					<li class="toggle-list__item toggle-item toggle-item--register">
+						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
+						<input class="visually-hidden toggle-item__radio" type="radio" id="register" name="btn" value="register" aria-required="true" onchange="Selected(this)" />
+						<label class="toggle-item__label" for="register">Регистрация</label>
+					</li>
+				</ul>
+			</div>
 			<!--Форма регистрации-->
 			<form class="start__form start-form start-form--register" method="post" action="#" id="form-register">
 				<ul class="start-form__list form-list">
@@ -104,27 +125,6 @@
 			</form>
 			<!--Блок управляющих кнопок-->
 			<div class="start__controls start-controls">
-				<!--Список кнопок для выбора "войти или регистрация"-->
-				<ul class="start-controls__list controls-list">
-					<li class="controls-list__item controls-item controls-item--enter">
-						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
-						<p class="controls-item__wrapper controls-item__wrapper--enterradio">
-							<input class="visually-hidden controls-item__radio" type="radio" id="enter" name="btn" value="enter" aria-required="true" onchange="Selected(this)" checked />
-							<label class="controls-item__label" for="enter">Войти</label>
-						</p>
-						<!--Кнопка для входа, активируется когда все данные введены-->
-						<button class="controls-item__btn controls-item__btn--enter" type="submit">Войти</button>
-					</li>
-					<li class="controls-list__item controls-item controls-item--register">
-						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
-						<p class="controls-item__wrapper controls-item__wrapper--registerradio">
-							<input class="visually-hidden controls-item__radio" type="radio" id="register" name="btn" value="register" aria-required="true" onchange="Selected(this)" />
-							<label class="controls-item__label" for="register">Регистрация</label>
-						</p>
-						<!--Кнопка для регистрации введенных данных, активируется когда все данные введены-->
-						<button class="controls-item__btn controls-item__btn--register" type="submit">Зарегистрироваться!</button>
-					</li>
-				</ul>
 				<!--Кнопка отправки слова, скрыт, пока пользователь не зарегистрирован или не вошел в систему-->
 				<button class="start-controls__submit" type="submit">Отправить</button>
 				<!--Список чекбоксов для принятия условий при регистрации, активен только для этапа регистрации-->
@@ -277,6 +277,7 @@
 		<div class="footer__rules footer-rules">
 			<a class="footer-rules__link footer-rules__link--person" href="#" target="_self">Персональные данные</a>
 			<a class="footer-rules__link footer-rules__link--main" href="#" target="_self">Правила конкурса</a>
+			<button class="footer-rules__howto" type="button">Как участвовать</button>
 			<button class="footer-rules__btn footer-rules__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
 			<button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
 		</div>
