@@ -1,0 +1,19 @@
+.header {
+  background-color: $bg-header;
+  height: 60px;
+
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablets) {
+  .header {
+    width: 100%;
+
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: 1024px 86px;
+    background-position: top center;
+
+    position: relative;
+  }
+}

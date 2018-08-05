@@ -1,0 +1,14 @@
+.start-item {
+  padding-left: 50px;
+
+  &__label {
+    font: {
+      size: 0.8em;
+      weight: 400;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    line-height: normal;
+  }
+}

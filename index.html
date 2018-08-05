@@ -18,7 +18,14 @@
 <body>
 	<header class="header">
 		<nav class="header__nav header-nav">
+			<button class="header-nav__howto--mobile" type="button"><i class="fa fa-exclamation-circle"></i></button>
 			<button class="header-nav__howto" type="button">Как участвовать</button>
+			<!--Лого для мобильной версии-->
+			<div class="header-nav__logo">
+				<a class="header-nav__link" href="index.html" target="_self">
+					<img class="header-nav__pic" src="img/logo-main.svg" />
+				</a>
+			</div>
 			<!--Блок персонального кабинета-->
 			<div class="header-nav__cabinet header-cabinet">
 				<!--Планка результата зарегистрированного пользователя-->
@@ -28,68 +35,106 @@
 				</div>
 				<!--Блок входа в учетную запись-->
 				<div class="header-cabinet__details cabinet-details">
-					<a class="cabinet-details__link" href="#" target="_self">
-						<img class="cabinet-details__photo" src="img/personal-photo.png" />
-						<p class="cabinet-details__name">Константин Константиновский</p>
-					</a>
+					<img class="cabinet-details__photo" src="img/personal-photo.png" />
+					<p class="cabinet-details__name">Константин Константиновский</p>
 				</div>
 			</div>
-			<!--Гамбургер для мобильного-->
-			<div class="header-nav__opener header-opener header-nav__opener--closed" id="menuToggle">
-				<input type="checkbox" />
-				<span id="span1"></span>
-				<span id="span2"></span>
-				<span id="span3"></span>
-			</div>
+			<!--Вход в интерфейс игрока-->
+			<button class="header-nav__login" type="button"><i class="fa fa-user"></i></button>
 		</nav>
 	</header>
+	<!--Основное содержание страницы-->
 	<main class="main">
 		<!--Интро блок-->
 		<section class="main__intro intro">
 			<div class="intro__name">
-				<img class="intro__pic" src="img/secondary-logo.png" />
+				<img class="intro__pic" src="img/logo-secondary.png" />
 			</div>
 			<div class="intro__info">
-				<h2 class="intro__title intro__title--authorize">Для участия в конкурсе необходимо авторизоваться</h2>
+				<h2 class="intro__title intro__title--authorize" id="authorize">Для участия в конкурсе необходимо авторизоваться</h2>
+				<h2 class="intro__title intro__title--watch" id="watch">Смотри MTV с 13 августа, чтобы узнать секретное слово</h2>
 			</div>
 			<div class="intro__logo">
 				<a class="intro__link" href="#" target="_self">
-					<img class="intro__img" src="img/logo.png" />
+					<img class="intro__img" src="img/logo-main.svg" />
 				</a>
 			</div>
 		</section>
-		<!--Блок формы регистрации-->
+		<!--Блок формы регистрации или входа для незарегистрированных пользователей-->
 		<section class="main__start start">
 			<h2 class="visually-hidden">Секция регистрации нового пользователя или входа уже существующего</h2>
 			<!--Форма регистрации-->
-			<form class="start__form start-form" method="post" action="#">
+			<form class="start__form start-form start-form--register" method="post" action="#" id="form-register">
 				<ul class="start-form__list form-list">
-					<li class="form-list__item form-item">
-						<label class="form-item__label" for="email"></label>
-						<input class="form-item__input" type="email" name="email" id="email" placeholder="E-mail" />
+					<li class="form-list__item form-item form-item--email">
+						<label class="form-item__label" for="email1"></label>
+						<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" />
 					</li>
-					<li class="form-list__item form-item">
-						<label class="form-item__label" for="name"></label>
-						<input class="form-item__input" type="text" name="name" id="name" placeholder="Имя" />
+					<li class="form-list__item form-item form-item--name">
+						<label class="form-item__label" for="name1"></label>
+						<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" />
 					</li>
-					<li class="form-list__item form-item">
-						<label class="form-item__label" for="password"></label>
-						<input class="form-item__input" type="password" name="password" id="password" placeholder="Пароль" />
+					<li class="form-list__item form-item form-item--password">
+						<label class="form-item__label" for="password1"></label>
+						<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" />
+					</li>
+				</ul>
+			</form>
+			<!--Форма входа-->
+			<form class="start__form start-form start-form--enter" method="post" action="#" id="form-enter">
+				<ul class="start-form__list form-list">
+					<li class="form-list__item form-item form-item--email">
+						<label class="form-item__label" for="email2"></label>
+						<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" />
+					</li>
+					<li class="form-list__item form-item form-item--password">
+						<label class="form-item__label" for="password2"></label>
+						<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" />
+					</li>
+				</ul>
+			</form>
+			<!--Форма ввода секретного слова-->
+			<form class="start__form start-form start-form--secret" method="post" action="#" id="form-secret">
+				<ul class="start-form__list form-list form-list--secret">
+					<li class="form-list__item form-item form-item--secret">
+						<label class="form-item__label" for="secret"></label>
+						<input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
 					</li>
 				</ul>
 			</form>
 			<!--Блок управляющих кнопок-->
 			<div class="start__controls start-controls">
-				<button class="start-controls__signin" type="button">Войти</button>
-				<button class="start-controls__signup" type="submit">Регистрация</button>
-				<!--Список чекбоксов для принятия условий-->
-				<ul class="start-controls__list start-list">
+				<!--Список кнопок для выбора "войти или регистрация"-->
+				<ul class="start-controls__list controls-list">
+					<li class="controls-list__item controls-item controls-item--enter">
+						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
+						<p class="controls-item__wrapper controls-item__wrapper--enterradio">
+							<input class="visually-hidden controls-item__radio" type="radio" id="enter" name="btn" value="enter" aria-required="true" onchange="Selected(this)" checked />
+							<label class="controls-item__label" for="enter">Войти</label>
+						</p>
+						<!--Кнопка для входа, активируется когда все данные введены-->
+						<button class="controls-item__btn controls-item__btn--enter" type="submit">Войти</button>
+					</li>
+					<li class="controls-list__item controls-item controls-item--register">
+						<!--Радио переключатель, скрывается, когда введены все данные и введены верно-->
+						<p class="controls-item__wrapper controls-item__wrapper--registerradio">
+							<input class="visually-hidden controls-item__radio" type="radio" id="register" name="btn" value="register" aria-required="true" onchange="Selected(this)" />
+							<label class="controls-item__label" for="register">Регистрация</label>
+						</p>
+						<!--Кнопка для регистрации введенных данных, активируется когда все данные введены-->
+						<button class="controls-item__btn controls-item__btn--register" type="submit">Зарегистрироваться!</button>
+					</li>
+				</ul>
+				<!--Кнопка отправки слова, скрыт, пока пользователь не зарегистрирован или не вошел в систему-->
+				<button class="start-controls__submit" type="submit">Отправить</button>
+				<!--Список чекбоксов для принятия условий при регистрации, активен только для этапа регистрации-->
+				<ul class="start-controls__list start-list" id="agreement">
 					<li class="start-list__item start-item">
-						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" />
+						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" required />
 						<label class="start-item__label" for="agree1">С правилами конкурса ознакомлен</label>
 					</li>
 					<li class="start-list__item start-item">
-						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" />
+						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" required />
 						<label class="start-item__label" for="agree2">Пользовательское соглашение прочитал</label>
 					</li>
 				</ul>
@@ -101,13 +146,130 @@
 				</div>
 			</div>
 		</section>
+		<!--Секция списков топ юзеров и городов только для зарегистрированного юзера-->
+		<section class="main__ranking ranking">
+			<!--Список топ-участников-->
+			<div class="ranking__users rank-users">
+				<header class="rank-users__header rank-header">
+					<b class="rank-header__title">Топ 12 участников</b>
+					<b class="rank-header__points">Баллы</b>
+				</header>
+				<ul class="rank-users__list rank-list">
+					<!--Single item-->
+					<li class="rank-list__item rank-item">
+						<b class="rank-item__nr">01</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">1320</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">02</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">1200</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">03</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">1100</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">04</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">1000</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">05</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">999</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">06</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">777</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">07</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">666</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">08</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">555</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">09</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">444</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">10</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">333</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">11</b>
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">222</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">12</b>
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">111</b>
+					</li>
+				</ul>
+			</div>
+			<!--Список топ-городов-->
+			<div class="ranking__users rank-cities">
+				<header class="rank-cities__header rank-header">
+					<b class="rank-header__title">Топ 3 городов</b>
+					<b class="rank-header__points">Баллы</b>
+				</header>
+				<ul class="rank-cities__list rank-list">
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">01</b>
+						<span class="rank-item__name">Угрюмовск</span>
+						<b class="rank-item__percent">30%</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">02</b>
+						<span class="rank-item__name">Заунывовск</span>
+						<b class="rank-item__points">20%</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">03</b>
+						<span class="rank-item__name">Екатеринбург</span>
+						<b class="rank-item__points">12%</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item">
+						<b class="rank-item__nr">03</b>
+						<span class="rank-item__name">Москва</span>
+						<b class="rank-item__points">12%</b>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</main>
 	<!--Футер-->
 	<footer class="footer">
 		<div class="footer__wrapper">
 			<div class="footer__copyright footer-copyright">
 				<p class="footer-copyright__description">
-					MTV Russia
+					2018 MTV Russia
 				</p>
 			</div>
 		</div>
@@ -119,6 +281,7 @@
 			<button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
 		</div>
 	</footer>
+	<script src="../js/script.js"></script>
 </body>
 
 </html>

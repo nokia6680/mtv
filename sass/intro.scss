@@ -1,0 +1,48 @@
+.intro {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__name {
+    width: 100%;
+    height: auto;
+  }
+
+  &__pic {
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__info {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font: {
+      family: $base-font;
+      size: 1em;
+      weight: 700;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--authorize {
+      display: block;
+    }
+
+    &--watch {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: none;
+  }
+}

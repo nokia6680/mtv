@@ -1,0 +1,21 @@
+.start-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: $bg-red;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &--register {
+    display: none;
+  }
+
+  &--secret {
+    display: none;
+  }
+}
