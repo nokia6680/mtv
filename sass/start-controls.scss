@@ -5,13 +5,16 @@
   align-items: flex-start;
 
   width: 100%;
+  margin-top: 20px;
 
-  &__submit {
-    display: none;
+  &__buttons {
+    margin-top: 20px;
+  }
 
+  &__btn {
     margin: 0 auto;
 
-    background-color: $btn-active;
+    background-color: $btn-pressed;
     border: none;
 
     cursor: pointer;
@@ -19,16 +22,16 @@
 
     font: {
       size: 1em;
-      weight: 700;
+      weight: 400;
       family: $base-font;
     }
 
-    color: $text-black;
+    color: $text-white;
     text-transform: uppercase;
     text-align: center;
     line-height: 1em;
 
-    padding: 11px 20px 7px 20px;
+    padding: 22px 20px 22px 20px;
 
     position: relative;
 
@@ -40,21 +43,37 @@
       height: 0;
 
       top: 0;
-      right: -10px;
+      right: -14px;
 
-      border-top: 17px solid transparent;
-      border-left: 10px solid #ffffff;
-      border-bottom: 17px solid transparent;
+      border-top: 30px solid transparent;
+      border-left: 15px solid #000;
+      border-bottom: 30px solid transparent;
+    }
+
+    &--submit {
+      display: none;
+    }
+
+    &--enter {
+      display: none;
+    }
+
+    &--register {
+      display: none;
+    }
+
+    &--onemore {
+      display: none;
     }
   }
 
-  .start-controls__submit:active {
-    background-color: $btn-pressed;
-    color: $text-white;
+  .start-controls__btn:active {
+    background-color: $btn-active;
+    color: $text-black;
   }
 
-  .start-controls__submit:active::after {
-    border-left-color: $btn-pressed;
+  .start-controls__btn:active::after {
+    border-left-color: $btn-active;
     background-color: transparent;
   }
 }

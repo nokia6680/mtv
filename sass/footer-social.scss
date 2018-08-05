@@ -1,0 +1,54 @@
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 30px;
+
+  &__btn {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 40px;
+
+    background-color: $btn-pressed;
+
+    margin-right: 30px;
+  }
+
+  &__btn--fb {
+    .fa-facebook::before {
+      position: absolute;
+      content: '\f09a';
+
+      font: {
+        family: 'FontAwesome';
+        size: 26px;
+      }
+
+      color: $color-lightgreen;
+      top: 12px;
+      left: 17px;
+    }
+  }
+
+  &__btn--vk {
+    .fa-vk::before {
+      position: absolute;
+      content: '\f189';
+      font: {
+        family: 'FontAwesome';
+        size: 26px;
+      }
+
+      color: $color-lightgreen;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}

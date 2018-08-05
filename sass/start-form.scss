@@ -11,11 +11,117 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  margin-top: 50px;
+
+  &--enter {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='61' height='61' viewBox='0 0 61 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='29.9343' cy='30.0039' rx='29.9343' ry='30.0039' transform='translate(0.455994)' fill='%23DFE1E1'/%3E%3Cellipse cx='12.3259' cy='12.3545' rx='12.3259' ry='12.3545' transform='translate(36 21)' fill='black'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+
+      top: -30px;
+      left: 30px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 36px;
+      height: 38px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='37' height='38' viewBox='0 0 37 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='18.0486' cy='18.0906' rx='18.0486' ry='18.0906' transform='translate(0.207642 1.5896)' fill='%23E0E2E2'/%3E%3Cellipse cx='7.70368' cy='7.72158' rx='7.70368' ry='7.72158' transform='translate(13)' fill='black'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 36px 38px;
+
+      top: -18px;
+      right: 30px;
+    }
+  }
+
   &--register {
     display: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='61' height='61' viewBox='0 0 61 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='29.9343' cy='30.0039' rx='29.9343' ry='30.0039' transform='translate(0.455994)' fill='%23DFE1E1'/%3E%3Cellipse cx='12.3259' cy='12.3545' rx='12.3259' ry='12.3545' transform='translate(36 21)' fill='black'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+
+      top: -30px;
+      left: 30px;
+
+      transform: rotate(-90deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 36px;
+      height: 38px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='37' height='38' viewBox='0 0 37 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='18.0486' cy='18.0906' rx='18.0486' ry='18.0906' transform='translate(0.207642 1.5896)' fill='%23E0E2E2'/%3E%3Cellipse cx='7.70368' cy='7.72158' rx='7.70368' ry='7.72158' transform='translate(13)' fill='black'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 36px 38px;
+
+      top: -18px;
+      right: 30px;
+
+      transform: rotate(45deg);
+    }
   }
 
   &--secret {
     display: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='61' height='61' viewBox='0 0 61 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='29.9343' cy='30.0039' rx='29.9343' ry='30.0039' transform='translate(0.455994)' fill='%23DFE1E1'/%3E%3Cellipse cx='12.3259' cy='12.3545' rx='12.3259' ry='12.3545' transform='translate(36 21)' fill='black'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+
+      top: -30px;
+      left: 30px;
+
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 36px;
+      height: 38px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='37' height='38' viewBox='0 0 37 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='18.0486' cy='18.0906' rx='18.0486' ry='18.0906' transform='translate(0.207642 1.5896)' fill='%23E0E2E2'/%3E%3Cellipse cx='7.70368' cy='7.72158' rx='7.70368' ry='7.72158' transform='translate(13)' fill='black'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 36px 38px;
+
+      top: -18px;
+      right: 30px;
+
+      transform: rotate(60deg);
+    }
   }
 }

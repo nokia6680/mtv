@@ -25,13 +25,7 @@
 					<img class="header-nav__pic" src="img/logo-main.svg" />
 				</a>
 			</div>
-			<!--Кнопка гамбургер-->
-			<div class="header-nav__opener" id="menuToggle">
-		    <input type="checkbox" />
-		    <span id="span1"></span>
-		    <span id="span2"></span>
-		    <span id="span3"></span>
-			</div>
+			<button class="header-nav__enter" type="button">Войти</button>
 			<!--Блок персонального кабинета-->
 			<div class="header-nav__cabinet header-cabinet">
 				<button class="header-cabinet__login" type="button"><i class="fa fa-user"></i></button>
@@ -45,13 +39,6 @@
 					<img class="cabinet-details__photo" src="img/personal-photo.png" />
 					<p class="cabinet-details__name">Константин Константиновский</p>
 				</div>
-			</div>
-			<!--Вход в интерфейс игрока-->
-			<div id="menuToggle">
-		    <input type="checkbox" />
-		    <span id="span1"></span>
-		    <span id="span2"></span>
-		    <span id="span3"></span>
 			</div>
 		</nav>
 	</header>
@@ -96,15 +83,15 @@
 				<ul class="start-form__list form-list">
 					<li class="form-list__item form-item form-item--email">
 						<label class="form-item__label" for="email1"></label>
-						<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" />
+						<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" required />
 					</li>
 					<li class="form-list__item form-item form-item--name">
 						<label class="form-item__label" for="name1"></label>
-						<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" />
+						<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" required />
 					</li>
 					<li class="form-list__item form-item form-item--password">
 						<label class="form-item__label" for="password1"></label>
-						<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" />
+						<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" required />
 					</li>
 				</ul>
 			</form>
@@ -113,11 +100,11 @@
 				<ul class="start-form__list form-list">
 					<li class="form-list__item form-item form-item--email">
 						<label class="form-item__label" for="email2"></label>
-						<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" />
+						<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" required />
 					</li>
 					<li class="form-list__item form-item form-item--password">
 						<label class="form-item__label" for="password2"></label>
-						<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" />
+						<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" required />
 					</li>
 				</ul>
 			</form>
@@ -132,24 +119,29 @@
 			</form>
 			<!--Блок управляющих кнопок-->
 			<div class="start__controls start-controls">
-				<!--Кнопка отправки слова, скрыт, пока пользователь не зарегистрирован или не вошел в систему-->
-				<button class="start-controls__submit" type="submit">Отправить</button>
 				<!--Список чекбоксов для принятия условий при регистрации, активен только для этапа регистрации-->
 				<ul class="start-controls__list start-list" id="agreement">
 					<li class="start-list__item start-item">
 						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" required />
-						<label class="start-item__label" for="agree1">С правилами конкурса ознакомлен</label>
+						<label class="start-item__label" for="agree1">С <a class="start-item__link" href="#" target="_blank">правилами конкурса</a> ознакомлен</label>
 					</li>
 					<li class="start-list__item start-item">
 						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" required />
-						<label class="start-item__label" for="agree2">Пользовательское соглашение прочитал</label>
+						<label class="start-item__label" for="agree2"><a class="start-item__link" href="#" target="_blank">Пользовательское соглашение</a> прочитал</label>
 					</li>
 				</ul>
+				<!--Все возможные кнопки на разные события-->
+				<div class="start-controls__buttons">
+					<button class="start-controls__btn start-controls__btn--submit" type="submit" id="submit-btn">Отправить</button>
+					<button class="start-controls__btn start-controls__btn--enter" type="submit" id="enter-btn">Войти</button>
+					<button class="start-controls__btn start-controls__btn--register" type="submit" id="register-btn">Регистрация</button>
+					<button class="start-controls__btn start-controls__btn--onemore" type="submit" id="onemre-btn">Еще слово</button>
+				</div>
 				<!--Альтернативный вход через соцсети-->
 				<div class="start-controls__social start-social">
-					<b class="start-social__title">Войти через соц.сети</b>
-					<button class="start-social__btn start-social__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
-					<button class="start-social__btn start-social__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+					<b class="start-social__title">Войти через соц.&nbsp;сети</b>
+					<button class="start-social__btn start-social__btn--fb" type="button"><i class="fa fa-facebook"></i>Facebook</button>
+					<button class="start-social__btn start-social__btn--vk" type="button"><i class="fa fa-vk"></i>Вконтакте</button>
 				</div>
 			</div>
 		</section>
@@ -273,22 +265,21 @@
 	</main>
 	<!--Футер-->
 	<footer class="footer">
-		<div class="footer__wrapper">
-			<div class="footer__copyright footer-copyright">
-				<p class="footer-copyright__description">
-					2018 MTV Russia
-				</p>
-			</div>
-		</div>
-		<!--Правая часть футера-->
 		<div class="footer__rules footer-rules">
 			<a class="footer-rules__link footer-rules__link--person" href="#" target="_self">Персональные данные</a>
 			<a class="footer-rules__link footer-rules__link--main" href="#" target="_self">Правила конкурса</a>
 			<!--Для мобильной версии всего этого-->
-			<button class="footer-rules__howto" type="button">Как участвовать</button>
-			<button class="footer-rules__btn footer-rules__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
-			<button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+			<a class="footer-rules__link footer-rules__link--howto" href="#" target="_self">Как участвовать</a>
+			<div class="footer-rules__social footer-social">
+				<button class="footer-social__btn footer-social__btn--vk" type="button"><i class="fa fa-vk"></i></button>
+				<button class="footer-social__btn footer-social__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
+			</div>
 		</div>
+		<div class="footer__logo">
+				<a class="footer__link" href="#" target="_blank">
+					<img class="footer__img" src="img/footer-logo.svg"/>
+				</a>
+			</div>
 	</footer>
 	<script src="js/script.js"></script>
 </body>

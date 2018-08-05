@@ -1,16 +1,16 @@
 .start-social {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   margin-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
 
   &__title {
     font: {
-      size: 0.8em;
+      size: 1.125em;
       weight: 700;
       family: $base-font;
     }
@@ -18,57 +18,116 @@
     color: $text-black;
     text-transform: uppercase;
     line-height: normal;
+
+    margin-bottom: 25px;
   }
 
   &__btn {
-    background-color: $btn-active;
-    border: none;
-    border-radius: 20px;
+    font: {
+      size: 1.125em;
+      family: $base-font;
+      weight: 700;
+    }
 
-    width: 40px;
-    height: 40px;
+    color: $text-white;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+
     position: relative;
 
     cursor: pointer;
     outline: none;
 
-    &:hover {
-      background-color: $btn-pressed;
-    }
+    padding-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-    &:active {
-      background-color: $btn-pressed;
-    }
+    width: 95%;
+
+    margin-bottom: 15px;
   }
 
   &__btn--fb {
+    background-color: $color-fb;
     .fa-facebook::before {
       position: absolute;
       content: '\f09a';
 
       font: {
         family: 'FontAwesome';
-        size: 30px;
+        size: 24px;
       }
 
-      color: #8dc63f;
-      top: 7px;
-      left: 10px;
+      color: #fff;
+      top: 15px;
+      left: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 1.125em;
+      top: 15px;
+      left: 60px;
+      background-color: #fff;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 0;
+      height: 0;
+
+      top: 0;
+      right: -14px;
+
+      border-top: 25px solid transparent;
+      border-left: 15px solid $color-fb;
+      border-bottom: 25px solid transparent;
     }
   }
 
   &__btn--vk {
+    background-color: $color-vk;
     .fa-vk::before {
       position: absolute;
       content: '\f189';
       font: {
         family: 'FontAwesome';
-        size: 30px;
+        size: 24px;
       }
 
-      color: #8dc63f;
-      top: 5px;
-      left: 4px;
+      color: #fff;
+      top: 11px;
+      left: 13px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 1.125em;
+      top: 15px;
+      left: 60px;
+      background-color: #fff;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 0;
+      height: 0;
+
+      top: 0;
+      right: -14px;
+
+      border-top: 25px solid transparent;
+      border-left: 15px solid $color-vk;
+      border-bottom: 25px solid transparent;
     }
   }
 }

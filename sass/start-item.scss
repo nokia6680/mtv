@@ -1,14 +1,38 @@
 .start-item {
-  padding-left: 50px;
+  padding-left: 20px;
+  margin-bottom: 20px;
 
   &__label {
     font: {
-      size: 0.8em;
-      weight: 400;
+      size: 0.875em;
+      weight: 700;
       family: $base-font;
     }
 
     color: $text-black;
     line-height: normal;
+    text-transform: uppercase;
+
+    display: block;
+    width: 250px;
   }
+
+  &__link {
+    text-decoration: underline;
+    color: $text-black;
+  }
+}
+
+.start-item__input--checkbox + label {
+  @include checkbox-default;
+}
+
+.start-item__input--checkbox + label::before {
+  @include checkbox-custom;
+  @include animation;
+}
+
+.start-item__input--checkbox:checked + label::after {
+  @include checkbox-checked;
+  @include animation;
 }
