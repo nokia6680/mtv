@@ -1,5 +1,9 @@
 .header {
   background-color: $bg-header;
+  background-image: url('../img/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: 1024px 86px;
+  background-position: top center; 
   height: 60px;
 
   margin-bottom: 20px;
