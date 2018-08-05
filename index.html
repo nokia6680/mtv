@@ -18,7 +18,6 @@
 <body>
 	<header class="header">
 		<nav class="header__nav header-nav">
-			<button class="header-nav__howto--mobile" type="button"><i class="fa fa-exclamation-circle"></i></button>
 			<button class="header-nav__howto" type="button">Как участвовать</button>
 			<!--Лого для мобильной версии-->
 			<div class="header-nav__logo">
@@ -28,6 +27,7 @@
 			</div>
 			<!--Блок персонального кабинета-->
 			<div class="header-nav__cabinet header-cabinet">
+				<button class="header-cabinet__login" type="button"><i class="fa fa-user"></i></button>
 				<!--Планка результата зарегистрированного пользователя-->
 				<div class="header-cabinet__result cabinet-result">
 					<b class="cabinet-result__quantity">2&nbsp;700</b>
@@ -40,7 +40,12 @@
 				</div>
 			</div>
 			<!--Вход в интерфейс игрока-->
-			<button class="header-nav__login" type="button"><i class="fa fa-user"></i></button>
+			<div id="menuToggle">
+		    <input type="checkbox" />
+		    <span id="span1"></span>
+		    <span id="span2"></span>
+		    <span id="span3"></span>
+			</div>
 		</nav>
 	</header>
 	<!--Основное содержание страницы-->
@@ -277,11 +282,13 @@
 		<div class="footer__rules footer-rules">
 			<a class="footer-rules__link footer-rules__link--person" href="#" target="_self">Персональные данные</a>
 			<a class="footer-rules__link footer-rules__link--main" href="#" target="_self">Правила конкурса</a>
+			<!--Для мобильной версии всего этого-->
+			<button class="footer-rules__howto" type="button">Как участвовать</button>
 			<button class="footer-rules__btn footer-rules__btn--fb" type="button"><i class="fa fa-facebook"></i></button>
 			<button class="footer-rules__btn footer-rules__btn--vk" type="button"><i class="fa fa-vk"></i></button>
 		</div>
 	</footer>
-	<script src="../js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
