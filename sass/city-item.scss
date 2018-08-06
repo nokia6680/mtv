@@ -1,0 +1,16 @@
+.city-item {
+  width: 100%;
+  text-align: left;
+
+  &__link {
+    font: {
+      size: 1.125em;
+      weight: 700;
+      family: $base-font;
+    }
+    line-height: normal;
+    color: $text-black;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,84 @@
+.rank-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  min-height: 40px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  &--cities {
+    min-height: 30px;
+    margin: 0;
+  }
+
+  &__nr {
+    font: {
+      size: 0.875em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+  }
+
+  &__pic {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__name {
+    font: {
+      size: 0.875em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-left: 10px;
+    width: 100%;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/shadow.png');
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+
+      width: 40px;
+      height: 40px;
+
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__points {
+    font: {
+      size: 0.875em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

@@ -145,84 +145,186 @@
 				</div>
 			</div>
 		</section>
+		<!--Блок выбора города после регистрации-->
+		<section class="main__city city">
+			<h2 class="city__title">Ваш город <span class="city__name">Уфа</span>?</h2>
+			<div class="city__action city-action">
+				<button class="city-action__btn city-action__btn--yes" type="button" id="btn-yes">Да</button>
+				<div class="city-action__search city-search">
+					<label class="city-search__label" for="search-city">Другой город</label>
+					<input class="city-search__input city-search__input--city" type="text" name="city" id="city" />
+					<button class="city-search__btn" type="button"></button>
+				</div>
+				<ul class="city-action__results city-results">
+					<li class="city-results__item city-item" id="city-1">
+						<a class="city-item__link" href="#">Город 1</a>
+					</li>
+					<li class="city-results__item city-item" id="city-2">
+						<a class="city-item__link" href="#">Город 2</a>
+					</li>
+					<li class="city-results__item city-item" id="city-3">
+						<a class="city-item__link" href="#">Город 3</a>
+					</li>
+					<li class="city-results__item city-item" id="city-4">
+						<a class="city-item__link" href="#">Город 4</a>
+					</li>
+					<li class="city-results__item city-item" id="city-5">
+						<a class="city-item__link" href="#">Город 5</a>
+					</li>
+					<li class="city-results__item city-item" id="city-1">
+						<a class="city-item__link" href="#">Город 1</a>
+					</li>
+					<li class="city-results__item city-item" id="city-2">
+						<a class="city-item__link" href="#">Город 2</a>
+					</li>
+					<li class="city-results__item city-item" id="city-3">
+						<a class="city-item__link" href="#">Город 3</a>
+					</li>
+					<li class="city-results__item city-item" id="city-4">
+						<a class="city-item__link" href="#">Город 4</a>
+					</li>
+					<li class="city-results__item city-item" id="city-5">
+						<a class="city-item__link" href="#">Город 5</a>
+					</li>
+					<li class="city-results__item city-item" id="city-1">
+						<a class="city-item__link" href="#">Город 1</a>
+					</li>
+					<li class="city-results__item city-item" id="city-2">
+						<a class="city-item__link" href="#">Город 2</a>
+					</li>
+					<li class="city-results__item city-item" id="city-3">
+						<a class="city-item__link" href="#">Город 3</a>
+					</li>
+					<li class="city-results__item city-item" id="city-4">
+						<a class="city-item__link" href="#">Город 4</a>
+					</li>
+					<li class="city-results__item city-item" id="city-5">
+						<a class="city-item__link" href="#">Город 5</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<!--Секция списков топ юзеров и городов только для зарегистрированного юзера-->
 		<section class="main__ranking ranking">
+			<h2 class="visually-hidden">Топ-чарты пользователей и городов</h2>
 			<!--Список топ-участников-->
 			<div class="ranking__users rank-users">
+				<h2 class="rank-users__title">Топ 12 участников</h2>
 				<header class="rank-users__header rank-header">
-					<b class="rank-header__title">Топ 12 участников</b>
+					<span class="rank-header__count">#</span>
+					<b class="rank-header__name">Имя</b>
 					<b class="rank-header__points">Баллы</b>
 				</header>
-				<ul class="rank-users__list rank-list">
+				<ul class="rank-users__list rank-list rank-list--users">
 					<!--Single item-->
 					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">01</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">1320</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">02</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">1200</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
+						<b class="rank-item__nr">01</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">1320</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item rank-item">
+						<b class="rank-item__nr">02</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">1200</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item rank-item">
+						<b class="rank-item__nr">01</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
+						<span class="rank-item__name">Иван Иванов</span>
+						<b class="rank-item__points">1320</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item rank-item">
+						<b class="rank-item__nr">02</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
+						<span class="rank-item__name">Валерий Леонтьев</span>
+						<b class="rank-item__points">1200</b>
+					</li>
+					<!--Single item-->
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">03</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">1100</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">04</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">1000</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">05</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">999</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">06</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">777</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">07</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">666</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">08</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">555</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">09</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">444</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">10</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">333</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">11</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Валерий Леонтьев</span>
 						<b class="rank-item__points">222</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item">
 						<b class="rank-item__nr">12</b>
+						<img class="rank-item__pic" src="img/userpic.svg" />
 						<span class="rank-item__name">Иван Иванов</span>
 						<b class="rank-item__points">111</b>
 					</li>
@@ -230,31 +332,28 @@
 			</div>
 			<!--Список топ-городов-->
 			<div class="ranking__users rank-cities">
-				<header class="rank-cities__header rank-header">
-					<b class="rank-header__title">Топ 3 городов</b>
-					<b class="rank-header__points">Баллы</b>
-				</header>
-				<ul class="rank-cities__list rank-list">
+				<b class="rank-cities__title">Топ 3 городов</b>
+				<ul class="rank-cities__list rank-list rank-list--cities">
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item rank-item--cities">
 						<b class="rank-item__nr">01</b>
 						<span class="rank-item__name">Угрюмовск</span>
 						<b class="rank-item__percent">30%</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item rank-item--cities">
 						<b class="rank-item__nr">02</b>
 						<span class="rank-item__name">Заунывовск</span>
 						<b class="rank-item__points">20%</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item rank-item--cities">
 						<b class="rank-item__nr">03</b>
 						<span class="rank-item__name">Екатеринбург</span>
 						<b class="rank-item__points">12%</b>
 					</li>
 					<!--Single item-->
-					<li class="rank-list__item">
+					<li class="rank-list__item rank-item rank-item--cities">
 						<b class="rank-item__nr">03</b>
 						<span class="rank-item__name">Москва</span>
 						<b class="rank-item__points">12%</b>

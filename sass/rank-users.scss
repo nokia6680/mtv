@@ -1,0 +1,26 @@
+.rank-users {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__title {
+    font: {
+      size: 1.438em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: normal;
+    text-align: center;
+
+    display: block;
+    width: 100%;
+
+    background-color: $color-lightgreen;
+  }
+}

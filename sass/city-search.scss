@@ -1,0 +1,65 @@
+.city-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin-top: 20px;
+  position: relative;
+
+  &__label {
+    font: {
+      size: 1.125em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+
+  &__input {
+    font: {
+      size: 1.125em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: normal;
+
+    width: 100%;
+    padding: 11px 50px 11px 7px;
+
+    border: none;
+    background-color: $color-lightgreen;
+
+    cursor: text;
+    outline: none;
+
+    position: relative;
+    display: block;
+  }
+
+  &__btn {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='10' transform='translate(0 15.5564) rotate(-45)' stroke='black' stroke-width='2'/%3E%3Crect width='2' height='13' transform='translate(21.2133 22.6275) rotate(-45)' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+
+    width: 32px;
+    height: 32px;
+
+    top: 32px;
+    right: 10px;
+
+    border: none;
+
+    position: absolute;
+    content: '';
+  }
+}
