@@ -179,3 +179,33 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .start-form {
+    align-self: flex-start;
+
+    width: 66%;
+    padding-top: 87px;
+    padding-bottom: 87px;
+
+    &--enter,
+    &--register,
+    &--secret {
+      &::before {
+        background-size: 127px 127px;
+        width: 127px;
+        height: 127px;
+
+        top: -70px;
+      }
+
+      &::after {
+        background-size: 76px 76px;
+        width: 76px;
+        height: 76px;
+
+        top: -40px;
+      }
+    }
+  }
+}

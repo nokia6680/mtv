@@ -24,3 +24,36 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .cabinet-details {
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__name {
+      order: 1;
+      display: block;
+
+      font: {
+        size: 0.875em;
+        weight: 700;
+        family: $base-font;
+      }
+
+      color: $text-black;
+      text-transform: uppercase;
+      text-align: right;
+
+      width: 195px;
+      margin-right: 20px;
+    }
+
+    &__photo {
+      order: 2;
+      min-width: 40px;
+      max-width: 40px;
+    }
+  }
+}

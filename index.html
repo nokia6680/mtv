@@ -90,83 +90,88 @@
 					</li>
 				</ul>
 			</div>
-			<!--Форма регистрации-->
-			<form class="start__form start-form start-form--register" method="post" action="#" id="form-register">
-				<ul class="start-form__list form-list">
-					<li class="form-list__item form-item form-item--email">
-						<label class="form-item__label" for="email1"></label>
-						<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" required />
-					</li>
-					<li class="form-list__item form-item form-item--name">
-						<label class="form-item__label" for="name1"></label>
-						<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" required />
-					</li>
-					<li class="form-list__item form-item form-item--password">
-						<label class="form-item__label" for="password1"></label>
-						<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" required />
-					</li>
-				</ul>
-			</form>
-			<!--Форма входа-->
-			<form class="start__form start-form start-form--enter" method="post" action="#" id="form-enter">
-				<ul class="start-form__list form-list">
-					<li class="form-list__item form-item form-item--email">
-						<label class="form-item__label" for="email2"></label>
-						<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" required />
-					</li>
-					<li class="form-list__item form-item form-item--password">
-						<label class="form-item__label" for="password2"></label>
-						<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" required />
-					</li>
-				</ul>
-			</form>
-			<!--Форма ввода секретного слова-->
-			<form class="start__form start-form start-form--secret" method="post" action="#" id="form-secret">
-				<ul class="start-form__list form-list form-list--secret">
-					<li class="form-list__item form-item form-item--secret">
-						<label class="form-item__label" for="secret"></label>
-						<input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
-					</li>
-					<li class="form-list__item form-item form-item--success">
-						<p class="form-item__success">Верно!<br />Вам начислено 100 баллов!</p>
-					</li>
-				</ul>
-			</form>
-			<!--Блок управляющих кнопок-->
-			<div class="start__controls start-controls">
-				<!--Список чекбоксов для принятия условий при регистрации, активен только для этапа регистрации-->
-				<ul class="start-controls__list start-list" id="agreement">
-					<li class="start-list__item start-item">
-						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" required />
-						<label class="start-item__label" for="agree1">С <a class="start-item__link" href="#" target="_blank">правилами конкурса</a> ознакомлен</label>
-					</li>
-					<li class="start-list__item start-item">
-						<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" required />
-						<label class="start-item__label" for="agree2"><a class="start-item__link" href="#" target="_blank">Пользовательское соглашение</a> прочитал</label>
-					</li>
-				</ul>
-				<!--Все возможные кнопки на разные события-->
-				<div class="start-controls__buttons">
-					<button class="start-controls__btn start-controls__btn--submit" type="submit" id="submit-btn">Отправить</button>
-					<button class="start-controls__btn start-controls__btn--enter" type="submit" id="enter-btn">Войти</button>
-					<button class="start-controls__btn start-controls__btn--register" type="submit" id="register-btn">Регистрация</button>
-					<button class="start-controls__btn start-controls__btn--onemore" type="submit" id="onemre-btn">Еще слово</button>
-				</div>
-				<!--Альтернативный вход через соцсети-->
-				<div class="start-controls__social start-social">
-					<b class="start-social__title">Войти через соц.&nbsp;сети</b>
-					<div class="start-social__wrapper">
-						<button class="start-social__btn start-social__btn--fb" type="button"><i class="fa fa-facebook"></i>Facebook</button>
-						<button class="start-social__btn start-social__btn--vk" type="button"><i class="fa fa-vk"></i>Вконтакте</button>
+
+			<div class="start__wrapper">
+				<!--Форма регистрации-->
+				<form class="start__form start-form start-form--register" method="post" action="#" id="form-register">
+					<ul class="start-form__list form-list">
+						<li class="form-list__item form-item form-item--email">
+							<label class="form-item__label" for="email1"></label>
+							<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" required />
+						</li>
+						<li class="form-list__item form-item form-item--name">
+							<label class="form-item__label" for="name1"></label>
+							<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" required />
+						</li>
+						<li class="form-list__item form-item form-item--password">
+							<label class="form-item__label" for="password1"></label>
+							<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" required />
+						</li>
+					</ul>
+				</form>
+				<!--Форма входа-->
+				<form class="start__form start-form start-form--enter" method="post" action="#" id="form-enter">
+					<ul class="start-form__list form-list">
+						<li class="form-list__item form-item form-item--email">
+							<label class="form-item__label" for="email2"></label>
+							<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" required />
+						</li>
+						<li class="form-list__item form-item form-item--password">
+							<label class="form-item__label" for="password2"></label>
+							<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" required />
+						</li>
+					</ul>
+				</form>
+				<!--Форма ввода секретного слова-->
+				<form class="start__form start-form start-form--secret" method="post" action="#" id="form-secret">
+					<ul class="start-form__list form-list form-list--secret">
+						<li class="form-list__item form-item form-item--secret">
+							<label class="form-item__label" for="secret"></label>
+							<input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
+						</li>
+						<li class="form-list__item form-item form-item--success">
+							<p class="form-item__success">Верно!<br />Вам начислено 100 баллов!</p>
+						</li>
+					</ul>
+				</form>
+				<!--Блок управляющих кнопок-->
+				<div class="start__controls start-controls">
+					<!--Список чекбоксов для принятия условий при регистрации, активен только для этапа регистрации-->
+					<ul class="start-controls__list start-list" id="agreement">
+						<li class="start-list__item start-item">
+							<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree1" id="agree1" required />
+							<label class="start-item__label" for="agree1">С <a class="start-item__link" href="#" target="_blank">правилами конкурса</a> ознакомлен</label>
+						</li>
+						<li class="start-list__item start-item">
+							<input class="start-item__input start-item__input--checkbox visually-hidden" type="checkbox" name="agree2" id="agree2" required />
+							<label class="start-item__label" for="agree2"><a class="start-item__link" href="#" target="_blank">Пользовательское соглашение</a> прочитал</label>
+						</li>
+					</ul>
+					<!--Все возможные кнопки на разные события-->
+					<div class="start-controls__buttons">
+						<button class="start-controls__btn start-controls__btn--submit" type="submit" id="submit-btn">Отправить</button>
+						<button class="start-controls__btn start-controls__btn--enter" type="submit" id="enter-btn">Войти</button>
+						<button class="start-controls__btn start-controls__btn--register" type="submit" id="register-btn">Регистрация</button>
+						<button class="start-controls__btn start-controls__btn--onemore" type="submit" id="onemre-btn">Еще слово</button>
+					</div>
+					<!--Альтернативный вход через соцсети-->
+					<div class="start-controls__social start-social">
+						<b class="start-social__title">Войти через соц.&nbsp;сети</b>
+						<div class="start-social__wrapper">
+							<button class="start-social__btn start-social__btn--fb" type="button"><i class="fa fa-facebook"></i>Facebook</button>
+							<button class="start-social__btn start-social__btn--vk" type="button"><i class="fa fa-vk"></i>Вконтакте</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--Блок выбора города после регистрации-->
 		<section class="main__city city">
-			<h2 class="city__title">Ваш город <span class="city__name">Уфа</span>?</h2>
-			<div class="city__action city-action">
+			<div class="city__wrapper">
+				<h2 class="city__title">Ваш город <span class="city__name">Уфа</span>?</h2>
 				<button class="city-action__btn city-action__btn--yes" type="button" id="btn-yes">Да</button>
+			</div>
+			<div class="city__action city-action">
 				<div class="city-action__search city-search">
 					<label class="city-search__label" for="search-city">Другой город</label>
 					<input class="city-search__input city-search__input--city" type="text" name="city" id="city" />
@@ -392,10 +397,10 @@
 			</div>
 		</div>
 		<div class="footer__logo">
-				<a class="footer__link" href="#" target="_blank">
-					<img class="footer__img" src="img/footer-logo.svg"/>
-				</a>
-			</div>
+			<a class="footer__link" href="#" target="_blank">
+				<img class="footer__img" src="img/footer-logo.svg"/>
+			</a>
+		</div>
 	</footer>
 	<script src="js/script.js"></script>
 </body>

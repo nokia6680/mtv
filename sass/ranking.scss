@@ -6,3 +6,16 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+@media (min-width: $notebooks) {
+  .ranking {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    width: 100%;
+
+    margin-top: 59px;
+  }
+}

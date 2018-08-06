@@ -76,9 +76,50 @@
         font: {
           size: 30px;
         }
-        
+
         top: 13px;
         left: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .footer-social {
+    width: 15%;
+    margin-right: 0;
+    margin-left: auto;
+    align-items: flex-start;
+    margin-top: 0;
+
+    &__btn {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__btn:last-child {
+      margin-right: 0;
+    }
+
+    &__btn--fb {
+      .fa-facebook::before {
+        font: {
+          size: 18px;
+        }
+
+        top: 8px;
+        left: 9px;
+      }
+    }
+
+    &__btn--vk {
+      .fa-vk::before {
+        font: {
+          size: 18px;
+        }
+
+        top: 5px;
+        left: 5px;
       }
     }
   }

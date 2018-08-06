@@ -94,3 +94,44 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .start-controls {
+    width: 28%;
+    margin-top: 30px;
+
+    &__buttons {
+      order: 1;
+    }
+
+    &__list {
+      order: 2;
+    }
+
+    &__btn {
+      font: {
+        size: 1em;
+      }
+      line-height: 1em;
+
+      padding-top: 37px;
+      padding-bottom: 37px;
+
+      &::after {
+        border-top: 45px solid transparent;
+        border-left: 30px solid #000;
+        border-bottom: 45px solid transparent;
+
+        right: -28px;
+      }
+
+      &--enter {
+        margin-bottom: 78px;
+      }
+    }
+
+    &__social {
+      order: 3;
+    }
+  }
+}

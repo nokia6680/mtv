@@ -66,3 +66,20 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .form-item {
+    &__input {
+      margin-bottom: 7px;
+      font: {
+        size: 2em;
+      }
+    }
+
+    &__success {
+      font: {
+        size: 2em;
+      }
+    }
+  }
+}

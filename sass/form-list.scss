@@ -84,3 +84,33 @@
     }
   }
 }
+
+
+@media (min-width: $notebooks) {
+  .form-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    position: relative;
+
+    border-left: 4px solid #8dc63f;
+    border-right: 4px solid #8dc63f;
+
+    &::before {
+      min-height: 24px;
+
+      top: -1px;
+      left: 0;
+    }
+
+    &::after {
+      min-height: 24px;
+
+      bottom: -3px;
+      left: 0;
+    }
+  }
+}

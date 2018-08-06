@@ -74,3 +74,24 @@
     }
   }
 }
+
+
+@media (min-width: $notebooks) {
+  .city-action {
+    width: 75%;
+
+    &__btn {
+      font: {
+        size: 1em;
+      }
+
+      line-height: 1em;
+
+      &::after {
+        border-top: 30px solid transparent;
+        border-left: 15px solid #000;
+        border-bottom: 30px solid transparent;
+      }
+    }
+  }
+}

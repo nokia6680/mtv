@@ -37,3 +37,14 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .rank-cities {
+    width: 41%;
+    &__title {
+      font-size: 1.125em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

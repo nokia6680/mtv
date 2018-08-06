@@ -72,3 +72,13 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .toggle-item {
+    &__label {
+      font-size: 1em;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

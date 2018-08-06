@@ -94,3 +94,20 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .city-search {
+
+    &__label {
+      font: {
+        size: 1.125em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.125em;
+      }
+    }
+  }
+}

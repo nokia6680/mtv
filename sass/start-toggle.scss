@@ -6,3 +6,11 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+@media (min-width: $notebooks) {
+  .start-toggle {
+    margin-top: 65px;
+
+    width: 40%;
+  }
+}

@@ -54,3 +54,11 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .rank-list {
+    &--users {
+      height: 550px;
+    }
+  }
+}

@@ -22,3 +22,10 @@
     height: 300px;
   }
 }
+
+@media (min-width: $notebooks) {
+  .city-results {
+    height: 300px;
+    align-items: center;
+  }
+}

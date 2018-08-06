@@ -38,3 +38,29 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .city {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    &__wrapper {
+      width: 25%;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 1em;
+      line-height: 1em;
+
+      margin-right: 0px;
+    }
+
+    &__action {
+      width: 55%;
+    }
+  }
+}

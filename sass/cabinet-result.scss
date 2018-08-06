@@ -40,3 +40,25 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .cabinet-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 200px;
+
+    &__quantity {
+      font-size: 1.125em;
+      margin-right: 5px;
+      line-height: normal;
+    }
+
+    &__points {
+      font-size: 1.125em;
+      line-height: normal;
+    }
+  }
+}

@@ -68,18 +68,150 @@
   }
 }
 
-@media (min-width: $large-tablets) {
+@media (min-width: $notebooks) {
   .intro {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+
+    margin-top: -90px;
+
+    &__name {
+      width: 236px;
+      margin-right: 20px;
+    }
+
+    &__pic {
+      margin: 0;
+      min-width: 236px;
+    }
+
+    &__info {
+      margin-top: 0;
+      width: 450px;
+      margin-bottom: 12px;
+    }
+
     &__title {
       font: {
-        size: 1.5em;
+        size: 1.625em;
       }
+
+      text-align: left;
+      margin: 0;
+    }
+
+    /*Логотип с зубами*/
+
+    &__logo {
+      display: block;
+
+      width: 188px;
+      height: 200px;
+
+      background-color: $bg-red;
+
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      margin-right: 0;
+      margin-left: auto;
+
+      position: relative;
+
+      z-index: -1;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 27px;
+        height: 27px;
+
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='13.7915' cy='13.7186' rx='13.7915' ry='13.7186' transform='translate(0.034729 0.176514)' fill='%23E0E2E2'/%3E%3Cellipse cx='5.59186' cy='5.57524' rx='5.59186' ry='5.57524' transform='translate(8.01929 6.67456)' fill='black'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 27px 27px;
+
+        bottom: -10px;
+        left: 20px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 47px;
+        height: 47px;
+
+        background-image: url("data:image/svg+xml,%3Csvg width='37' height='38' viewBox='0 0 37 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='18.0486' cy='18.0906' rx='18.0486' ry='18.0906' transform='translate(0.207642 1.5896)' fill='%23E0E2E2'/%3E%3Cellipse cx='7.70368' cy='7.72158' rx='7.70368' ry='7.72158' transform='translate(13)' fill='black'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 47px 47px;
+
+        bottom: -15px;
+        right: 20px;
+
+        transform: rotate(135deg);
+      }
+    }
+
+    &__link {
+      display: block;
+      background-color: $bg-darkred;
+      height: 100%;
+      width: 100%;
+
+      text-align: center;
+      padding-top: 14px;
+
+      border-left: 2px solid $border-logo;
+      border-right: 2px solid $border-logo;
+
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        min-height: 13px;
+
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='319' height='12' viewBox='0 0 319 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(318.957 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(13.8909 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(28.4179 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(42.9448 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(57.4717 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(71.9987 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(86.5256 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(101.053 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(115.579 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(130.106 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(144.633 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(159.16 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(173.687 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(188.214 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(202.741 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(217.268 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(231.795 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(246.322 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(260.849 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(275.376 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(289.903 11.6281) rotate(180)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(304.43 11.6281) rotate(180)' fill='%2322B454'/%3E%3C/svg%3E%0A");
+
+        background-size: cover;
+        background-repeat: repeat-x;
+
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        min-height: 13px;
+
+        background-image: url("data:image/svg+xml,%3Csvg width='319' height='12' viewBox='0 0 319 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(305.31)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(290.783)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(276.256)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(261.729)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(247.202)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(232.675)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(218.148)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(203.622)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(189.095)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(174.568)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(160.041)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(145.514)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(130.987)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(116.46)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(101.933)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(87.4061)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(72.8791)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(58.3522)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(43.8253)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(29.2983)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(14.7714)' fill='%2322B454'/%3E%3Cpath d='M6.82326 0L13.6465 11.4721H0L6.82326 0Z' transform='translate(0.2444)' fill='%2322B454'/%3E%3C/svg%3E%0A");
+
+        background-size: cover;
+        background-repeat: repeat-x;
+
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &__img {
+      width: 87px;
+      height: 51px;
     }
   }
 }
 
 @media (min-width: $widebooks) {
   .intro {
+
     &__title {
       font: {
         size: 1.625em;

@@ -125,3 +125,31 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .rank-header {
+    margin-top: 32px;
+    padding-bottom: 5px;
+
+    &__count {
+      font: {
+        size: 0.875em;
+      }
+
+      margin-right: 30px;
+      margin-left: 0;
+    }
+
+    &__name {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &__points {
+      font: {
+        size: 0.875em;
+      }
+    }
+  }
+}

@@ -206,3 +206,45 @@
     }
   }
 }
+
+@media (min-width: $notebooks) {
+  .rank-item {
+
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 0.875em;
+      }
+      margin-right: 20px;
+    }
+
+    &__pic {
+      min-width: 40px;
+      max-width: 40px;
+    }
+
+    &__name {
+      font: {
+        size: 0.875em;
+      }
+
+      margin-left: 30px;
+    }
+
+    &__points {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 0.875em;
+      }
+    }
+  }
+}
