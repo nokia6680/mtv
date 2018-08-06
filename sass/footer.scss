@@ -47,3 +47,11 @@
     width: 50px;
   }
 }
+
+@media (min-width: 480px) {
+  .footer {
+    &__logo {
+      right: 60px;
+    }
+  }
+}

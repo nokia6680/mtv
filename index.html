@@ -28,7 +28,6 @@
 			<button class="header-nav__enter" type="button">Войти</button>
 			<!--Блок персонального кабинета-->
 			<div class="header-nav__cabinet header-cabinet">
-				<button class="header-cabinet__login" type="button"><i class="fa fa-user"></i></button>
 				<!--Планка результата зарегистрированного пользователя-->
 				<div class="header-cabinet__result cabinet-result">
 					<b class="cabinet-result__quantity">2&nbsp;700</b>
@@ -36,8 +35,20 @@
 				</div>
 				<!--Блок входа в учетную запись-->
 				<div class="header-cabinet__details cabinet-details">
-					<img class="cabinet-details__photo" src="img/personal-photo.png" />
+					<img class="cabinet-details__photo" src="img/userpic.svg" />
 					<p class="cabinet-details__name">Константин Константиновский</p>
+				</div>
+				<!--Меню выползающее-->
+				<div class="slide-panel">
+					<button class="slide-panel__close" type="button"></button>
+					<div class="slide-panel__info">
+						<img class="slide-panel__photo" src="img/userpic.svg" />
+						<b class="slide-panel__name">Константин Константиновский</b>
+						<div class="slide-panel__result">
+							<b class="slide-panel__quantity">2&nbsp;700</b>
+							<b class="slide-panel__points">баллов</b>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -51,7 +62,9 @@
 			</div>
 			<div class="intro__info">
 				<h2 class="intro__title intro__title--authorize" id="authorize">Для участия в конкурсе необходимо авторизоваться</h2>
+				<h2 class="intro__title intro__title--register" id="title-register">Регистрация нового пользователя</h2>
 				<h2 class="intro__title intro__title--watch" id="watch">Смотри MTV с 13 августа, чтобы узнать секретное слово</h2>
+				<h2 class="intro__title intro__title--tryagain" id="tryagain">Смотрите MTV завтра и ищите новое слово</h2>
 			</div>
 			<div class="intro__logo">
 				<a class="intro__link" href="#" target="_self">
@@ -114,6 +127,9 @@
 					<li class="form-list__item form-item form-item--secret">
 						<label class="form-item__label" for="secret"></label>
 						<input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
+					</li>
+					<li class="form-list__item form-item form-item--success">
+						<p class="form-item__success">Верно!<br />Вам начислено 100 баллов!</p>
 					</li>
 				</ul>
 			</form>

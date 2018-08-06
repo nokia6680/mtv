@@ -1,0 +1,30 @@
+.cabinet-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  &__quantity {
+    font: {
+      size: 1em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  &__points {
+    font: {
+      size: 1em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+}

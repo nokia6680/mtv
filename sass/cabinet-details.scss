@@ -1,0 +1,16 @@
+.cabinet-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  &__name {
+    display: none;
+  }
+
+  &__photo {
+    min-width: 60px;
+    max-width: 60px;
+  }
+}

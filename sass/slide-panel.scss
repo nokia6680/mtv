@@ -1,0 +1,113 @@
+.slide-panel {
+  position: absolute;
+  width: 100%;
+  height: 257px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  top: -300px;
+  left: 0;
+  z-index: 10005;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  background-color: $bg-red;
+  transition: 0.5s ease-in-out;
+
+  &--on {
+    display: flex;
+    top: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  &__close {
+    order: 2;
+
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='34' height='2' transform='translate(3.05176e-05 24.3137) rotate(-45)' fill='black'/%3E%3Crect width='34' height='2' transform='translate(1.41422 0.272095) rotate(45)' fill='black'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__info {
+    order: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__photo {
+    min-width: 60px;
+    max-width: 60px;
+  }
+
+  &__name {
+    font: {
+      size: 1em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 220px;
+
+    margin-top: 30px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 30px;
+      height: 2px;
+
+      background-color: #000;
+
+      bottom: -20px;
+      left: 20px;
+    }
+  }
+
+  &__result {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  &__quantity {
+    font: {
+      size: 1.5em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__points {
+    font: {
+      size: 1.5em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

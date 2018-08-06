@@ -15,6 +15,7 @@
 
   &--enter {
     position: relative;
+    display: none;
 
     &::before {
       position: absolute;

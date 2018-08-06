@@ -19,13 +19,12 @@
   &__info {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   &__title {
     font: {
       family: $base-font;
-      size: 1em;
+      size: 1.125em;
       weight: 700;
     }
 
@@ -35,10 +34,22 @@
 
     &--authorize {
       display: block;
+      margin-bottom: 0;
     }
 
     &--watch {
       display: none;
+      margin-bottom: 0;
+    }
+
+    &--tryagain {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    &--register {
+      display: none;
+      margin-bottom: 0;
     }
   }
 
