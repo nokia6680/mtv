@@ -16,31 +16,6 @@
     margin-right: 1%;
   }
 
-  &__btn {
-    display: none;
-
-    margin: 0 auto;
-
-    background-color: $btn-active;
-    border: none;
-
-    cursor: pointer;
-    outline: none;
-
-    font: {
-      size: 1em;
-      weight: 700;
-      family: $base-font;
-    }
-
-    color: $text-black;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1em;
-
-    position: relative;
-  }
-
   &__label {
     display: block;
 
@@ -78,4 +53,22 @@
 .toggle-item__radio:checked + label {
   background-color: #ffffff;
   color: $text-black;
+}
+
+
+@media (min-width: 640px) {
+  .toggle-item {
+    &__label {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .toggle-item {
+    &__label {
+      font-size: 1.250em;
+    }
+  }
 }

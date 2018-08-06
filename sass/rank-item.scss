@@ -51,20 +51,6 @@
     width: 100%;
 
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: '';
-      background-image: url('../img/shadow.png');
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-
-      width: 40px;
-      height: 40px;
-
-      top: 0;
-      right: 0;
-    }
   }
 
   &__points {
@@ -80,5 +66,143 @@
 
     margin-right: 0;
     margin-left: auto;
+  }
+
+  &__percent {
+    font: {
+      size: 0.875em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 480px) {
+  .rank-item {
+    min-height: 45px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 0.875em;
+      }
+
+      margin-right: 20px;
+    }
+
+    &__pic {
+      display: block;
+      width: 45px;
+      height: 45px;
+    }
+
+    &__name {
+      font: {
+        size: 0.875em;
+      }
+
+      margin-left: 30px;
+      width: 100%;
+    }
+
+    &__points {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 0.875em;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .rank-item {
+
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 1em;
+      }
+      margin-right: 20px;
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+
+      margin-left: 30px;
+    }
+
+    &__points {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .rank-item {
+
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 1.250em;
+      }
+      margin-right: 20px;
+    }
+
+    &__name {
+      font: {
+        size: 1.250em;
+      }
+
+      margin-left: 30px;
+    }
+
+    &__points {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 1.250em;
+      }
+    }
   }
 }

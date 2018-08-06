@@ -7,7 +7,7 @@
   align-items: center;
 
   &__name {
-    width: 280px;
+    width: 100%;
     height: auto;
   }
 
@@ -55,5 +55,35 @@
 
   &__logo {
     display: none;
+  }
+}
+
+@media (min-width: $tablets) {
+  .intro {
+    &__title {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}
+
+@media (min-width: $large-tablets) {
+  .intro {
+    &__title {
+      font: {
+        size: 1.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .intro {
+    &__title {
+      font: {
+        size: 1.625em;
+      }
+    }
   }
 }

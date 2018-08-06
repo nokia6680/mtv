@@ -49,3 +49,20 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablets) {
+  .form-item {
+    &__input {
+      margin-bottom: 7px;
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__success {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

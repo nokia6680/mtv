@@ -1,1 +1,22 @@
-<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 30"><defs><style>.cls-1{mask:url(#mask);}.cls-2{mask:url(#mask-2);}.cls-3{mask:url(#mask-3);}</style><mask id="mask" x="0" y="0" width="46.08" height="30" maskUnits="userSpaceOnUse"/><mask id="mask-2" x="18.79" y="0" width="5.75" height="4.19" maskUnits="userSpaceOnUse"/><mask id="mask-3" x="47.28" y="0" width="2.72" height="11.03" maskUnits="userSpaceOnUse"/></defs><title>footer-logo</title><g class="cls-1"><path d="M28.46,30V21.56l-5.37,4.22-5.43-4.22V30H0V0H17.09L23,6l6-6H46.08V12.87l-3.85,7.52c-0.25.49-.88,0.55-1,0s-0.63-6-1.39-6.28-2.24-.81-2.91.18-0.95.87-.38,2.9,4,10,4,10a0.77,0.77,0,0,0,.79.48c1,0.15,2,.19,2.31-0.48s2.46-6.84,2.46-6.84V30H35.34L34.78,13.61s5.31-2.77,5.5-3.57S39.39,7.88,38.5,8.38s-4.8,2.77-4.8,2.77a3.66,3.66,0,0,1-.88,0c-0.44-.06-2-0.31-2.08.62a11.64,11.64,0,0,0-.13,1.42s-2.34,1.6-4,2.46S23.37,16.94,23,17.31a1.37,1.37,0,0,0,0,1.85c0.62,0.68,1.12,1.11,2.13.55s4.5-3.23,4.86-3.33,1.14-.68,1.33.55S31.24,30,31.24,30H28.46Z" transform="translate(0 0)"/></g><path d="M21.07,30V25.93l-2.27-1.85V30h2.27Zm3.79-3.94,2.34-2v1.48l-0.38.49h-2Z" transform="translate(0 0)"/><g class="cls-2"><path d="M18.79,0L23,4.19l1.5-1.66-0.38-.43Z" transform="translate(0 0)"/></g><g class="cls-3"><path d="M47.28,0L50,1.6V7.76L47.28,11V0Z" transform="translate(0 0)"/></g><path d="M50,13.37V30H47.28V17.68Z" transform="translate(0 0)"/></svg>
+<svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="47" height="30">
+<path d="M23.0417 30H0V0H46.0834V30H23.0408H23.0417Z" fill="black"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.4588 30V21.5608L23.0895 25.7799L17.6562 21.5608V30H0V0H17.0875L22.9624 6.03653L28.9644 0H46.0834V12.8746L42.2299 20.3902C41.9776 20.8832 41.3459 20.9447 41.2197 20.3902C41.0926 19.8357 40.588 14.4142 39.8301 14.1067C39.0712 13.7982 37.5937 13.2968 36.9237 14.2912C36.2442 15.2996 35.9775 15.157 36.5443 17.1869C37.1129 19.2196 40.5249 27.2282 40.5249 27.2282C40.5249 27.2282 40.565 27.5936 41.3134 27.7129C42.2853 27.8667 43.3042 27.9058 43.6195 27.2282C43.9349 26.5498 46.0834 20.3902 46.0834 20.3902V30H35.3448L34.7762 13.6137C34.7762 13.6137 40.0824 10.8419 40.2716 10.0404C40.4609 9.2398 39.3876 7.88468 38.5026 8.37771C37.6185 8.87073 33.7019 11.1495 33.7019 11.1495C33.7019 11.1495 33.2594 11.211 32.8179 11.1495C32.3754 11.0879 30.8586 10.8419 30.7334 11.7655C30.6063 12.6901 30.6063 13.1821 30.6063 13.1821C30.6063 13.1821 28.2696 14.7842 26.6267 15.6463C24.9847 16.5094 23.3733 16.9399 23.0417 17.31C22.7101 17.679 22.4262 18.4805 23.0417 19.1581C23.6582 19.8357 24.1628 20.2672 25.173 19.7126C26.1842 19.1581 29.6726 16.4842 30.0377 16.3854C30.4429 16.2773 31.175 15.7078 31.3642 16.9399C31.5544 18.172 31.2381 30 31.2381 30H28.4588Z" fill="black"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.27464 5.91444V1.84815L0 0V5.91351L2.27464 5.91444ZM6.06602 1.9721L8.40278 0V1.47815L8.02336 1.9721H6.06602Z" transform="translate(18.7925 24.0856)" fill="black"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="18" y="0" width="7" height="5">
+<path d="M5.74872 0H0V4.18932H5.74872V0Z" transform="translate(18.7934)" fill="black"/>
+</mask>
+<g mask="url(#mask1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.24822 4.19025L5.74872 2.52664L5.36929 2.09513L0 0Z" transform="translate(18.7934 -0.000976562)" fill="black"/>
+</g>
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="47" y="0" width="3" height="12">
+<path d="M2.71619 0H0V11.0255H2.71619V0.000931984V0Z" transform="translate(47.2838)" fill="black"/>
+</mask>
+<g mask="url(#mask2)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L2.71619 1.60303V7.76352L0 11.0274V0Z" transform="translate(47.2838 -0.000976562)" fill="black"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.71619 0V16.6333H0V4.31234L2.71619 0Z" transform="translate(47.2838 13.3667)" fill="black"/>
+</svg>

@@ -11,6 +11,7 @@
   width: 100%;
 
   margin-bottom: 30px;
+  margin-top: 10px;
 
   &--users {
     height: 600px;
@@ -23,5 +24,33 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .rank-list {
+    &--users {
+      height: 660px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .rank-list {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    &--users {
+      height: 660px;
+      overflow-y: scroll;
+    }
+
+    &--cities {
+      margin-top: 30px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }

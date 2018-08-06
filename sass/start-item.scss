@@ -36,3 +36,29 @@
   @include checkbox-checked;
   @include animation;
 }
+
+@media (min-width: 480px) {
+  .start-item {
+    &__label {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .start-item {
+    &__label {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .start-item {
+    margin-top: 20px;
+    &__label {
+      width: 100%;
+      font-size: 1.250em;
+    }
+  }
+}

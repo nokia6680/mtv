@@ -1,6 +1,6 @@
 .city {
   @include container;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -26,5 +26,15 @@
 
     color: $text-black;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablets) {
+  .city {
+    &__title {
+      font: {
+        size: 1.250em;
+      }
+    }
   }
 }

@@ -16,3 +16,9 @@
 
   overflow-y: scroll;
 }
+
+@media (min-width: $tablets) {
+  .city-results {
+    height: 300px;
+  }
+}

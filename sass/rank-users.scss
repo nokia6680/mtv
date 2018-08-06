@@ -22,5 +22,18 @@
     width: 100%;
 
     background-color: $color-lightgreen;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .rank-users {
+    &__title {
+      font-size: 1.625em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }

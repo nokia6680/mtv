@@ -14,3 +14,13 @@
     max-width: 60px;
   }
 }
+
+@media (min-width: $tablets) {
+  .cabinet-details {
+    margin-left: 20px;
+    &__photo {
+      min-width: 80px;
+      max-width: 80px;
+    }
+  }
+}

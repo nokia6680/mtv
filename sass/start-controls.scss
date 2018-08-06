@@ -77,3 +77,20 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $tablets) {
+  .start-controls {
+    &__btn {
+      font: {
+        size: 1.250em;
+      }
+      line-height: 1.250em;
+
+      &::after {
+        border-top: 35px solid transparent;
+        border-left: 15px solid #000;
+        border-bottom: 35px solid transparent;
+      }
+    }
+  }
+}

@@ -126,3 +126,56 @@
     }
   }
 }
+
+@media (min-width: 480px) {
+  .start-form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 640px) {
+  .start-form {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--enter,
+    &--register,
+    &--secret {
+      &::before {
+        background-size: 70px 70px;
+        width: 70px;
+        height: 70px;
+      }
+
+      &::after {
+        background-size: 48px 50px;
+        width: 48px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .start-form {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &--enter,
+    &--register,
+    &--secret {
+      &::before {
+        background-size: 70px 70px;
+        width: 70px;
+        height: 70px;
+      }
+
+      &::after {
+        background-size: 48px 50px;
+        width: 48px;
+        height: 50px;
+      }
+    }
+  }
+}

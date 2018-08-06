@@ -55,3 +55,32 @@
     left: 0;
   }
 }
+
+@media (min-width: $tablets) {
+  .form-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    position: relative;
+
+    border-left: 4px solid #8dc63f;
+    border-right: 4px solid #8dc63f;
+
+    &::before {
+      min-height: 14px;
+
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      min-height: 14px;
+
+      bottom: -1px;
+      left: 0;
+    }
+  }
+}
