@@ -7,7 +7,7 @@
 
 @media (min-width: $notebooks) {
   .header-cabinet {
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
     width: 100%;

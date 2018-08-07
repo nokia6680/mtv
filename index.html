@@ -47,6 +47,7 @@
 							<b class="slide-panel__quantity">2&nbsp;700</b>
 							<b class="slide-panel__points">баллов</b>
 						</div>
+						<button class="slide-panel__exit" type="button">Выйти</button>
 					</div>
 				</div>
 			</div>
@@ -98,14 +99,17 @@
 						<li class="form-list__item form-item form-item--email">
 							<label class="form-item__label" for="email1"></label>
 							<input class="form-item__input" type="email" name="email" id="email1" placeholder="E-mail" required />
+							<span class="form-item__error form-item__error--emailreg">Введите корректный e-mail!</span>
 						</li>
 						<li class="form-list__item form-item form-item--name">
 							<label class="form-item__label" for="name1"></label>
 							<input class="form-item__input" type="text" name="name1" id="name1" placeholder="Имя" required />
+							<span class="form-item__error form-item__error--namereg">Введите имя!</span>
 						</li>
 						<li class="form-list__item form-item form-item--password">
 							<label class="form-item__label" for="password1"></label>
 							<input class="form-item__input" type="password" name="password1" id="password1" placeholder="Пароль" required />
+							<span class="form-item__error form-item__error--passwordreg">Пароль слишком короткий!</span>
 						</li>
 					</ul>
 				</form>
@@ -115,10 +119,12 @@
 						<li class="form-list__item form-item form-item--email">
 							<label class="form-item__label" for="email2"></label>
 							<input class="form-item__input" type="email" name="email2" id="email2" placeholder="E-mail" required />
+							<span class="form-item__error form-item__error--emailent">Неверный e-mail!</span>
 						</li>
 						<li class="form-list__item form-item form-item--password">
 							<label class="form-item__label" for="password2"></label>
 							<input class="form-item__input" type="password" name="password2" id="password2" placeholder="Пароль" required />
+							<span class="form-item__error form-item__error--passwordent">Пароль неверный!</span>
 						</li>
 					</ul>
 				</form>
@@ -128,9 +134,11 @@
 						<li class="form-list__item form-item form-item--secret">
 							<label class="form-item__label" for="secret"></label>
 							<input class="form-item__input" type="text" name="secret" id="secret" placeholder="Введи секретное слово" />
+							<span class="form-item__error form-item__error--secret">Слово не было введено!</span>
 						</li>
 						<li class="form-list__item form-item form-item--success">
 							<p class="form-item__success">Верно!<br />Вам начислено 100 баллов!</p>
+							<p class="form-item__again">Вы не угадали!<br />На сегодня у Вас осталось <span class="form-item__error form-item__error--count">2</span> попытки!</p>
 						</li>
 					</ul>
 				</form>
@@ -402,7 +410,17 @@
 			</a>
 		</div>
 	</footer>
-	<script src="js/script.js"></script>
+	<!--Попап с правилами-->
+	<div class="overlay">
+		<div class="popup-rules">
+			<button class="popup-rules__close" type="button"></button>
+			<h2 class="popup-rules__title">Как участвовать</h2>
+			<p class="popup-rules__description">Толпа, иcходя из того, что интегрирует генезис. Коллективное бессознательное, конечно, притягивает потребительский комплекс, следовательно тенденция к конформизму связана с менее низким интеллектом. Толпа концептуально интегрирует экспериментальный аутизм, хотя этот факт нуждается в дальнейшей проверке наблюдением. Аутотренинг осознаёт эскапизм. В связи с этим нужно подчеркнуть, что ригидность осознаёт инсайт. Чем больше люди узнают друг друга, тем больше аутизм отталкивает автоматизм.</p>
+			<p class="popup-rules__description">Воспитание просветляет индивидуальный комплекс, хотя этот факт нуждается в дальнейшей проверке наблюдением. Конечно, нельзя не принять во внимание тот факт, что поведенческая терапия выбирает филогенез. Гештальт неравномерен.</p>
+			<p class="popup-rules__description">Этот концепт элиминирует концепт «нормального», однако бихевиоризм отчуждает закон в силу которого смешивает субъективное и объективное, переносит свои внутренние побуждения на реальные связи вещей. Роджерс определял терапию как, код интегрирует психоанализ. Фрустрация, как бы это ни казалось парадоксальным, неустойчиво отчуждает субъект, в полном соответствии с основными законами развития ассоцианизм.</p>
+		</div>
+	</div>
+	<script src="../js/script.js"></script>
 </body>
 
 </html>

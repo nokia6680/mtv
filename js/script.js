@@ -46,3 +46,32 @@ if (modalSearch) {
     }
   });
 }
+
+var modalRules = document.querySelector(".overlay");
+var closeRules = document.querySelector(".popup-rules__close");
+var openRules = document.querySelector(".footer-rules__link--howto")
+
+if (modalRules) {
+  for (var i = 0; i < openRules.length; i++) openRules[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    modalRules.classList.add("overlay--on");
+  });
+
+  modalRules.addEventListener("click", function() {
+    modalRules.classList.remove("overlay--on");
+  });
+
+  modalRules.addEventListener("click", function(event) {
+    event.stopPropagation();
+  });
+
+  closeRules.addEventListener("click", function() {
+    modalRules.classList.remove("overlay--on");
+  });
+
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      modalRules.classList.remove("overlay--on");
+    }
+  });
+}

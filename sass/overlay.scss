@@ -1,0 +1,200 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.overlay--on {
+  display: block;
+  @include animation;
+}
+
+.popup-rules {
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+
+  margin: 0 auto;
+  margin-top: 25%;
+
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+
+  position: relative;
+  border-radius: 3px;
+
+  box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+
+  z-index: 1001;
+
+  &__title {
+    font: {
+      size: 1em;
+      family: $base-font;
+      weight: 700;
+    }
+
+    text-transform: uppercase;
+    margin-top: 30px;
+    line-height: normal;
+  }
+
+  &__description {
+    font: {
+      size: 0.875em;
+      family: $base-font;
+      weight: 400;
+    }
+
+    margin-top: 0;
+    line-height: normal;
+  }
+
+  &__close {
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='34' height='2' transform='translate(3.05176e-05 24.3137) rotate(-45)' fill='red'/%3E%3Crect width='34' height='2' transform='translate(1.41422 0.272095) rotate(45)' fill='red'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    cursor: pointer;
+    outline: none;
+
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}
+
+@media (min-width: 480px) {
+  .popup-rules {
+    margin-top: 30%;
+    &__title {
+      font-size: 1.125em;
+    }
+    &__description {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .popup-rules {
+    width: 70%;
+    margin-top: 20%;
+    &__title {
+      font-size: 1.125em;
+      margin-top: 0;
+    }
+    &__description {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-rules {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 15%;
+    
+    &__title {
+      font-size: 1.250em;
+    }
+    &__description {
+      font-size: 1em;
+    }
+    &__close {
+      top: 10px;
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .popup-rules {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 1.250em;
+    }
+    &__description {
+      font-size: 1em;
+    }
+    &__close {
+      top: 10px;
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: $large-widebooks) {
+  .popup-rules {
+    width: 50%;
+
+    margin-top: 5%;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+      font-size: 1.625em;
+    }
+    &__description {
+      font-size: 1.250em;
+    }
+    &__close {
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .popup-rules {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__title {
+      font-size: 1.875em;
+    }
+    &__description {
+      font-size: 1.5em;
+    }
+    &__close {
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+      top: 10px;
+      right: 20px;
+    }
+  }
+}

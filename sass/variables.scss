@@ -16,6 +16,7 @@ $bg-darkred: #ad1e23;
 $color-fb: #2661CD;
 $color-vk: #3B5E8C;
 $color-lightgreen: #22B454;
+$color-darkgreen: #22b24c;
 $border-logo: #8dc63f;
 
 $btn-active: #ffffff;
@@ -23,8 +24,12 @@ $btn-pressed: #000000;
 
 $text-black: #000000;
 $text-white: #ffffff;
+$text-red: #EC1125;
 
 $base-font: "mplus", sans-serif;
 $base-font-color: #000;
 $base-font-size: 16px;
 $base-font-weight: normal;
+
+$baseFontColor: $text-black;
+$baseFontFamily: $base-font;

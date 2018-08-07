@@ -16,6 +16,10 @@
   &--users {
     height: 600px;
     overflow-y: scroll;
+
+    .rank-item:first-of-type {
+      background-color: gold;
+    }
   }
 
   &--cities {

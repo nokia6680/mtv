@@ -11,7 +11,7 @@
       family: $base-font;
     }
 
-    color: $text-black;
+    color: $text-red;
     text-transform: uppercase;
     line-height: 1em;
   }
@@ -23,7 +23,7 @@
       family: $base-font;
     }
 
-    color: $text-black;
+    color: $text-red;
     text-transform: uppercase;
     line-height: 1em;
   }
@@ -47,17 +47,16 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 200px;
+    width: 150px;
+    margin-right: 20px;
 
     &__quantity {
       font-size: 1.125em;
       margin-right: 5px;
-      line-height: normal;
     }
 
     &__points {
       font-size: 1.125em;
-      line-height: normal;
     }
   }
 }
@@ -83,6 +82,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
+    width: 200px;
 
     &__quantity {
       font-size: 1.625em;

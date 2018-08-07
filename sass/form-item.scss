@@ -26,11 +26,52 @@
     outline: none;
   }
 
+  /*Алерты для полей формы регистрации, входа и ввода слова*/
+
+  &__error {
+    font: {
+      size: 0.625em;
+      weight: 700;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    text-transform: uppercase;
+    line-height: normal;
+
+    &--emailreg {
+      display: none;
+    }
+
+    &--namereg {
+      display: none
+    }
+
+    &--passwordreg {
+      display: none;
+    }
+
+    &--emailent {
+      display: none;
+    }
+
+    &--passwordent {
+      display: none;
+    }
+
+    &--secret {
+      display: none;
+    }
+  }
+
+
+
   &--secret {
     display: none;
   }
-
-  &__success {
+  /*Стили для уведомлений об успешной или нет оптравке слова*/
+  &__success,
+  &__again {
     font: {
       size: 1.125em;
       family: $base-font;
@@ -45,8 +86,16 @@
     border: none;
     text-align: center;
 
-    width: 51%;
+    width: 100%;
     margin: 0;
+  }
+
+  &__success {
+    display: none;
+  }
+
+  &__again {
+    display: none;
   }
 }
 
@@ -59,9 +108,16 @@
       }
     }
 
-    &__success {
+    &__success,
+    &__again {
       font: {
         size: 1.250em;
+      }
+    }
+
+    &__error {
+      font: {
+        size: 0.875em;
       }
     }
   }
@@ -76,7 +132,8 @@
       }
     }
 
-    &__success {
+    &__success,
+    &__again {
       font: {
         size: 2em;
       }
@@ -93,7 +150,8 @@
       }
     }
 
-    &__success {
+    &__success,
+    &__again {
       font: {
         size: 2.125em;
       }
@@ -110,9 +168,20 @@
       }
     }
 
-    &__success {
+    &__success,
+    &__again {
       font: {
         size: 2.75em;
+      }
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .form-item {
+    &__error {
+      font: {
+        size: 1.125em;
       }
     }
   }
