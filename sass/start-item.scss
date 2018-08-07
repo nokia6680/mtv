@@ -72,3 +72,14 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .start-item {
+    margin-top: 25px;
+
+    &__label {
+      width: 100%;
+      font-size: 1em;
+    }
+  }
+}

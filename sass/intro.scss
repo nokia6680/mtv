@@ -211,11 +211,50 @@
 
 @media (min-width: $widebooks) {
   .intro {
+    &__name {
+      width: 300px;
+      margin-right: 50px;
+    }
+
+    &__info {
+      margin-bottom: 25px;
+    }
+
+    &__pic {
+      min-width: 300px;
+    }
 
     &__title {
       font: {
         size: 1.625em;
       }
+    }
+
+    /*Логотип с зубами*/
+
+    &__logo {
+      width: 200px;
+      height: 230px;
+
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &__link {
+      padding-top: 14px;
+
+      &::before {
+        min-height: 14px;
+      }
+
+      &::after {
+        min-height: 14px;
+      }
+    }
+
+    &__img {
+      width: 100px;
+      height: 61px;
     }
   }
 }

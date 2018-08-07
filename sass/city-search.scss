@@ -111,3 +111,20 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .city-search {
+
+    &__label {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

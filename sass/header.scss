@@ -62,3 +62,15 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .header {
+    height: 85px;
+
+    &::after {
+      background-size: 2400px 40px;
+      bottom: -33px;
+      height: 40px;
+    }
+  }
+}

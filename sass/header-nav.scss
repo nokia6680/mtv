@@ -87,3 +87,15 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .header-nav {
+    &__logo {
+      display: none;
+    }
+
+    &__enter {
+      display: none;
+    }
+  }
+}

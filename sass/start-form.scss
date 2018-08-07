@@ -197,6 +197,7 @@
         height: 127px;
 
         top: -70px;
+        left: 70px;
       }
 
       &::after {
@@ -205,7 +206,18 @@
         height: 76px;
 
         top: -40px;
+        right: 70px;
       }
     }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .start-form {
+    align-self: flex-start;
+
+    width: 66%;
+    padding-top: 95px;
+    padding-bottom: 95px;
   }
 }

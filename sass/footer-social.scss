@@ -124,3 +124,34 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .footer-social {
+    &__btn {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__btn--fb {
+      .fa-facebook::before {
+        font: {
+          size: 22px;
+        }
+
+        top: 10px;
+        left: 12px;
+      }
+    }
+
+    &__btn--vk {
+      .fa-vk::before {
+        font: {
+          size: 22px;
+        }
+
+        top: 8px;
+        left: 7px;
+      }
+    }
+  }
+}

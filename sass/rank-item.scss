@@ -136,11 +136,6 @@
 @media (min-width: 640px) {
   .rank-item {
 
-    &--cities {
-      min-height: 30px;
-      margin: 0;
-    }
-
     &__nr {
       font: {
         size: 1em;
@@ -172,11 +167,6 @@
 
 @media (min-width: $tablets) {
   .rank-item {
-
-    &--cities {
-      min-height: 30px;
-      margin: 0;
-    }
 
     &__nr {
       font: {
@@ -210,11 +200,6 @@
 @media (min-width: $notebooks) {
   .rank-item {
 
-    &--cities {
-      min-height: 30px;
-      margin: 0;
-    }
-
     &__nr {
       font: {
         size: 0.875em;
@@ -244,6 +229,39 @@
     &__percent {
       font: {
         size: 0.875em;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .rank-item {
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__points {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 1em;
       }
     }
   }

@@ -51,3 +51,13 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .rank-users {
+    &__title {
+      font-size: 1.250em;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

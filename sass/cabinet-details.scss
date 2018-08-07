@@ -57,3 +57,27 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .cabinet-details {
+    margin-left: 0;
+
+    &__name {
+      order: 1;
+      display: block;
+
+      font: {
+        size: 1em;
+      }
+
+      width: 195px;
+      margin-right: 20px;
+    }
+
+    &__photo {
+      order: 2;
+      min-width: 50px;
+      max-width: 50px;
+    }
+  }
+}

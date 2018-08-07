@@ -64,3 +64,20 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .city {
+    margin-top: 40px;
+    &__wrapper {
+      width: 25%;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 1.125em;
+      line-height: 1.125em;
+
+      margin-right: 0px;
+    }
+  }
+}

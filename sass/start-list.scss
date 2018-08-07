@@ -10,3 +10,9 @@
 
   width: 100%;
 }
+
+@media (min-width: $widebooks) {
+  .start-list {
+    margin-bottom: 20px;
+  }
+}

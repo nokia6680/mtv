@@ -258,3 +258,21 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .start-social {
+    width: 100%;
+
+    &__title {
+      font-size: 1.125em;
+    }
+
+    &__btn {
+      font-size: 1.125em;
+      width: 95%;
+
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  }
+}

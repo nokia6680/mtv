@@ -82,3 +82,13 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .toggle-item {
+    &__label {
+      font-size: 1.125em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

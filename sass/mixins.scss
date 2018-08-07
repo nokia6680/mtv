@@ -36,12 +36,14 @@
     width: auto;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 8%;
+    padding: 0 40px;
   }
-  @media (min-width: $hd) {
-    width: 1600px;
+
+  @media (min-width: $large-widebooks) {
+    width: auto;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 160px;
   }
 }
 
@@ -115,6 +117,10 @@
   @media (min-width: $notebooks) {
     padding-left: 20px;
   }
+
+  @media (min-width: $widebooks) {
+    padding-left: 30px;
+  }
 }
 
 @mixin checkbox-custom {
@@ -148,6 +154,11 @@
   @media (min-width: $notebooks) {
     width: 20px;
     height: 20px;
+  }
+
+  @media (min-width: $widebooks) {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -190,5 +201,11 @@
 
     left: -6px;
     top: 2px;
+  }
+
+  @media (min-width: $widebooks) {
+    background-size: 15px 14px;
+    width: 15px;
+    height: 14px;
   }
 }

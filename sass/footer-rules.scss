@@ -68,3 +68,12 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .footer-rules {
+
+    &__link {
+      font-size: 1em;
+    }
+  }
+}
