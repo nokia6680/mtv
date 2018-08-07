@@ -32,3 +32,18 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start {
+    &__wrapper {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      flex-wrap: nowrap;
+
+      margin-top: 20px;
+    }
+  }
+}

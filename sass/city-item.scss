@@ -48,3 +48,14 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .city-item {
+    margin-bottom: 7px;
+    &__link {
+      font: {
+        size: 1.5em;
+      }
+    }
+  }
+}

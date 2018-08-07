@@ -128,3 +128,33 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .city-search {
+
+    &__label {
+      font: {
+        size: 1.50em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.50em;
+      }
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    &__btn {
+      background-size: 55px 55px;
+
+      width: 55px;
+      height: 55px;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+  }
+}

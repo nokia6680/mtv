@@ -27,6 +27,16 @@
   .city-results {
     height: 300px;
     align-items: center;
+
+    &::-webkit-scrollbar {
+      display: inline-block;
+      width: 3px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000;
+    }
   }
 }
 

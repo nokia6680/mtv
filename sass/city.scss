@@ -1,6 +1,6 @@
 .city {
   @include container;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -78,6 +78,21 @@
       line-height: 1.125em;
 
       margin-right: 0px;
+    }
+  }
+}
+
+@media (min-width: $large-widebooks) {
+  .city {
+    margin-top: 40px;
+
+    &__wrapper {
+      width: 25%;
+    }
+
+    &__title {
+      font-size: 1.5em;
+      line-height: 1.5em;
     }
   }
 }

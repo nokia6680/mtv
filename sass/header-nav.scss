@@ -99,3 +99,15 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .header-nav {
+    &__logo {
+      display: none;
+    }
+
+    &__enter {
+      display: none;
+    }
+  }
+}

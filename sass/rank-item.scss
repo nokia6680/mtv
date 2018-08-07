@@ -266,3 +266,41 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .rank-item {
+    &--cities {
+      min-height: 30px;
+      margin: 0;
+    }
+
+    &__nr {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__pic {
+      min-width: 60px;
+      max-width: 60px;
+    }
+
+    &__points {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__percent {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

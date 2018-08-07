@@ -43,7 +43,7 @@
     width: auto;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 160px;
+    padding: 0 40px;
   }
 }
 
@@ -160,6 +160,10 @@
     width: 25px;
     height: 25px;
   }
+
+  @media (min-width: $large-widebooks) {
+    top: 6px;
+  }
 }
 
 @mixin checkbox-checked {
@@ -207,5 +211,9 @@
     background-size: 15px 14px;
     width: 15px;
     height: 14px;
+  }
+
+  @media (min-width: $large-widebooks) {
+    top: 12px;
   }
 }

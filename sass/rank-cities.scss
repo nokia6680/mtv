@@ -58,3 +58,17 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .rank-cities {
+    &__title {
+      font-size: 1.50em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .rank-item {
+      margin-top: 15px;
+    }
+  }
+}

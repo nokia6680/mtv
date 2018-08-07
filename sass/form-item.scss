@@ -100,3 +100,20 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .form-item {
+    &__input {
+      margin-bottom: 10px;
+      font: {
+        size: 2.75em;
+      }
+    }
+
+    &__success {
+      font: {
+        size: 2.75em;
+      }
+    }
+  }
+}

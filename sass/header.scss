@@ -74,3 +74,15 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .header {
+    height: 85px;
+
+    &::after {
+      background-size: 4500px 75px;
+      bottom: -64px;
+      height: 75px;
+    }
+  }
+}

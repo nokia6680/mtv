@@ -157,3 +157,25 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start-controls {
+    &__btn {
+      font: {
+        size: 1.50em;
+      }
+      line-height: 1.50em;
+
+      &::after {
+        border-top: 55px solid transparent;
+        border-left: 28px solid #000;
+        border-bottom: 55px solid transparent;
+        right: -27px;
+      }
+
+      &--enter {
+        margin-bottom: 104px;
+      }
+    }
+  }
+}

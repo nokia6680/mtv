@@ -57,13 +57,42 @@
 
 @media (min-width: $notebooks) {
   .rank-list {
+    padding-right: 20px;
+    &--users {
+      height: 550px;
+    }
+
+    &::-webkit-scrollbar {
+      display: inline-block;
+      width: 3px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000;
+    }
+/*
+    &::-webkit-scrollbar-button:vertical {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='11' viewBox='0 0 20 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 8L9 0L18 8' transform='translate(1 2)' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");
+      background-size: 10px 5px;
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 5px;
+
+      z-index: 100;
+    } */
+  }
+}
+
+@media (min-width: $widebooks) {
+  .rank-list {
     &--users {
       height: 550px;
     }
   }
 }
 
-@media (min-width: $widebooks) {
+@media (min-width: $large-widebooks) {
   .rank-list {
     &--users {
       height: 550px;

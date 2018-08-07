@@ -130,3 +130,18 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .form-list {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &::before {
+      min-height: 28px;
+    }
+
+    &::after {
+      min-height: 28px;
+    }
+  }
+}

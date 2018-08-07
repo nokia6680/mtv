@@ -81,3 +81,27 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .cabinet-details {
+    margin-left: 0;
+
+    &__name {
+      order: 1;
+      display: block;
+
+      font: {
+        size: 1.250em;
+      }
+
+      width: 230px;
+      margin-right: 30px;
+    }
+
+    &__photo {
+      order: 2;
+      min-width: 70px;
+      max-width: 70px;
+    }
+  }
+}

@@ -77,3 +77,20 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .cabinet-result {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__quantity {
+      font-size: 1.625em;
+      margin-right: 7px
+    }
+
+    &__points {
+      font-size: 1.625em;
+    }
+  }
+}

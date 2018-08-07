@@ -115,3 +115,25 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .city-action {
+    width: 75%;
+
+    &__btn {
+      font: {
+        size: 1.5em;
+      }
+
+      line-height: 1.5em;
+
+      &::after {
+        border-top: 40px solid transparent;
+        border-left: 28px solid #000;
+        border-bottom: 40px solid transparent;
+        top: 0;
+        right: -27px;
+      }
+    }
+  }
+}

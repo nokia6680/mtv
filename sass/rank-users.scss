@@ -61,3 +61,13 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .rank-users {
+    &__title {
+      font-size: 1.5em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

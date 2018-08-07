@@ -276,3 +276,57 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start-social {
+    width: 100%;
+
+    &__title {
+      font-size: 1.5em;
+    }
+
+    &__btn {
+      font-size: 1.5em;
+      width: 95%;
+
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+
+    &__btn--fb {
+      .fa-facebook::before {
+        top: 17px;
+        font-size: 34px;
+      }
+
+      &::before {
+        border-top: 35px solid transparent;
+        border-left: 15px solid $color-fb;
+        border-bottom: 35px solid transparent;
+      }
+
+      &::after {
+        top: 20px;
+      }
+    }
+
+    &__btn--vk {
+      .fa-vk::before {
+        top: 16px;
+        left: 15px;
+
+        font-size: 30px;
+      }
+
+      &::before {
+        border-top: 35px solid transparent;
+        border-left: 15px solid $color-vk;
+        border-bottom: 35px solid transparent;
+      }
+
+      &::after {
+        top: 20px;
+      }
+    }
+  }
+}

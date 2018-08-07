@@ -83,3 +83,14 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start-item {
+    margin-top: 24px;
+
+    &__label {
+      width: 100%;
+      font-size: 1.250em;
+    }
+  }
+}

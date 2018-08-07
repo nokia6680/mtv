@@ -176,3 +176,26 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .rank-header {
+    &__count {
+      font: {
+        size: 1.250em;
+      }
+      margin-left: 5px;
+    }
+
+    &__name {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__points {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

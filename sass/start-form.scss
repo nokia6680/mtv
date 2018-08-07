@@ -221,3 +221,10 @@
     padding-bottom: 95px;
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start-form {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}

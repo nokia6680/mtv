@@ -135,3 +135,19 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+
+
+    &::after {
+      background-size: 4500px 75px;
+      height: 75px;
+      top: -66px;
+    }
+  }
+}

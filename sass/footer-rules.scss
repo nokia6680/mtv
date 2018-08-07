@@ -77,3 +77,12 @@
     }
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .footer-rules {
+
+    &__link {
+      font-size: 1.250em;
+    }
+  }
+}

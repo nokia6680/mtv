@@ -16,3 +16,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $large-widebooks) {
+  .start-list {
+    margin-bottom: 0;
+  }
+}
