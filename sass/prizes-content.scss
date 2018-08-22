@@ -1,0 +1,117 @@
+.prizes-content {
+  background-image: url('../img/third-form.png');
+  background-repeat: no-repeat;
+  background-size: 240px 82px;
+  background-position: center center;
+
+  width: 260px;
+  height: 89px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-left: 30px;
+  padding-top: 5px;
+
+  &__count {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 25%;
+  }
+
+  &__nr {
+    font: {
+      size: 2.75em;
+      weight: 600;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
+
+  &__advice {
+    font: {
+      size: 0.5em;
+      weight: 300;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablets) {
+  .prizes-content {
+    background-image: url('../img/third-form.png');
+    background-repeat: no-repeat;
+    background-size: 505px 148px;
+    background-position: center center;
+
+    width: 505px;
+    height: 148px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-left: 20px;
+    padding-top: 5px;
+
+    &__count {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 30%;
+    }
+
+    &__nr {
+      font: {
+        size: 6.25em;
+        weight: 600;
+        family: $base-font;
+      }
+
+      margin: 0;
+    }
+
+    &__advice {
+      font: {
+        size: 1.125em;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      text-align: center;
+    }
+
+    &__description {
+      width: 70%;
+      margin: 0;
+
+      font: {
+        size: 1.5em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      margin-left: 20px;
+      margin-top: 0px;
+    }
+  }
+}

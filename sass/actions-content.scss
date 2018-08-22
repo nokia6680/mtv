@@ -1,0 +1,331 @@
+.actions-content {
+  background-image: url('../img/first-form.png');
+  background-repeat: no-repeat;
+  background-size: 260px 89px;
+
+  width: 260px;
+  height: 89px;
+
+  margin: 0 auto;
+
+  padding-top: 20px;
+  padding-left: 20px;
+
+  margin-top: -40px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    width: 260px;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 10px;
+  }
+
+  &__nr {
+    font: {
+      size: 0.675em;
+      weight: 400;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    margin-right: 10px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__description {
+    font: {
+      size: 0.625em;
+      weight: 300;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
+
+  &__advice {
+    font: {
+      size: 0.5em;
+      weight: 300;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 480px) and (max-height: 360px) and (orientation: landscape) {
+  .actions-content {
+    background-image: url('../img/first-form.png');
+    background-repeat: no-repeat;
+    background-size: 260px 89px;
+
+    width: 260px;
+    height: 89px;
+
+    margin: 0 auto;
+
+    padding-top: 20px;
+    padding-left: 20px;
+
+    margin-top: 10px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+
+      width: 260px;
+
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-bottom: 10px;
+    }
+
+    &__nr {
+      font: {
+        size: 0.675em;
+        weight: 400;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-transform: uppercase;
+
+      margin: 0;
+
+      margin-right: 10px;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__description {
+      font: {
+        size: 0.625em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+    }
+
+    &__advice {
+      font: {
+        size: 0.5em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      margin-top: -15px;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-height: 480px) and (orientation: landscape) {
+  .actions-content {
+    background-image: url('../img/first-form.png');
+    background-repeat: no-repeat;
+    background-size: 260px 89px;
+
+    width: 260px;
+    height: 89px;
+
+    margin: 0 auto;
+
+    padding-top: 20px;
+    padding-left: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+
+      width: 260px;
+
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-bottom: 10px;
+    }
+
+    &__nr {
+      font: {
+        size: 0.675em;
+        weight: 400;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+      text-transform: uppercase;
+
+      margin: 0;
+
+      margin-right: 10px;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__description {
+      font: {
+        size: 0.625em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+    }
+
+    &__advice {
+      font: {
+        size: 0.5em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      margin-top: -15px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .actions-content {
+    background-image: url('../img/first-form.png');
+    background-repeat: no-repeat;
+    background-size: 543px 187px;
+
+    width: 543px;
+    height: 187px;
+
+    margin: 0 auto;
+
+    padding-top: 40px;
+    padding-left: 50px;
+
+    margin-top: -70px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+
+      width: 500px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &__nr {
+      font: {
+        size: 2.375em;
+        weight: 600;
+      }
+
+      margin-right: 20px;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__description {
+      font: {
+        size: 1.563em;
+        weight: 600;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+    }
+
+    &__advice {
+      font: {
+        size: 1.125em;
+        weight: 300;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      margin-top: -15px;
+    }
+  }
+}

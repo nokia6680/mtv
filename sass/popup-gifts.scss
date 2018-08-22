@@ -1,0 +1,226 @@
+.popup-gifts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+
+  margin: 0 auto;
+  margin-top: 5%;
+
+  position: relative;
+
+  box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+
+  z-index: 1001;
+
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 100%;
+    height: 20px;
+
+    background-image: url('../img/tooth-bg.png');
+    background-size: 480px 20px;
+    background-repeat: no-repeat;
+
+    bottom: 0;
+    left: 0;
+    z-index: 3333;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    width: 30px;
+    height: 20px;
+
+    background-image: url('../img/face-small.png');
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+
+    bottom: 20px;
+    right: 5px;
+
+    z-index: 3333;
+
+    transform: rotate(-5deg);
+  }
+}
+
+@media (min-width: 480px) and (max-height: 360px) and (orientation: landscape) {
+  .popup-gifts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: #fff;
+    width: 95%;
+    height: 300px;
+
+    margin: 0 auto;
+    margin-top: 2%;
+
+    position: relative;
+
+    box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 0px 46px 3px rgba(0,0,0,0.5);
+
+    z-index: 1001;
+
+    overflow: hidden;
+
+    &::before {
+      display: none
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 30px;
+      height: 20px;
+
+      background-image: url('../img/face-small.png');
+      background-repeat: no-repeat;
+      background-size: 30px 20px;
+
+      bottom: 5px;
+      right: 5px;
+
+      z-index: 3333;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-height: 480px) and (orientation: landscape) {
+  .popup-gifts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 95%;
+    height: 400px;
+    margin-top: 2%;
+
+    z-index: 1001;
+
+    overflow: hidden;
+
+    &::before {
+      display: none
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 30px;
+      height: 20px;
+
+      background-image: url('../img/face-small.png');
+      background-repeat: no-repeat;
+      background-size: 30px 20px;
+
+      bottom: 20px;
+      right: 20px;
+
+      z-index: 3333;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .popup-gifts {
+    width: 730px;
+
+    margin-top: 2%;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 100%;
+      height: 30px;
+
+      background-image: url('../img/tooth-bg.png');
+      background-size: 768px 30px;
+      background-repeat: no-repeat;
+
+      bottom: 0;
+      left: 0;
+      z-index: 3333;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 111px;
+      height: 78px;
+
+      background-image: url('../img/face-small.png');
+      background-repeat: no-repeat;
+      background-size: 111px 71px;
+
+      bottom: 20px;
+      right: 5px;
+
+      z-index: 3333;
+
+      transform: rotate(-5deg);
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-gifts {
+    transform: scale(0.7);
+
+    margin-top: -11%
+  }
+}
+
+@media (min-width: $large-notebooks) {
+  .popup-gifts {
+    transform: scale(0.7);
+
+    margin-top: -11%
+  }
+}
+
+@media (min-width: $widebooks) {
+  .popup-gifts {
+    transform: scale(0.7);
+
+    margin-top: -8%
+  }
+}
+
+@media (min-width: $large-widebooks) {
+  .popup-gifts {
+    transform: scale(0.7);
+
+    margin-top: -5%
+  }
+}
+
+@media (min-width: $hd) {
+  .popup-gifts {
+    transform: scale(0.7);
+
+    margin-top: -5%
+  }
+}

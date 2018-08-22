@@ -1,0 +1,134 @@
+.prize-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 70%;
+
+  position: relative;
+
+  &__title {
+    font: {
+      size: 0.625em;
+      weight: 300;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item--shirt {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+  }
+
+  &__item--socket {
+    position: absolute;
+    top: 15px;
+    right: 10;
+  }
+
+  &__shirt {
+    height: 55px;
+  }
+
+  &__socket {
+    height: 25px;
+  }
+
+  &__description {
+    font: {
+      size: 0.625em;
+      weight: 500;
+      family: $base-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    margin-left: 2px;
+  }
+}
+
+
+@media (min-width: $tablets) {
+  .prize-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 70%;
+
+    position: relative;
+
+    &__title {
+      font: {
+        size: 1.125em;
+        weight: 400;
+        family: $base-font;
+      }
+
+      top: 0;
+      left: 0;
+
+      margin: 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__item--shirt {
+      position: absolute;
+      top: 60px;
+      left: 40px;
+    }
+
+    &__item--socket {
+      position: absolute;
+      top: 15px;
+      right: 10;
+    }
+
+    &__shirt {
+      height: 104px;
+    }
+
+    &__socket {
+      height: 74px;
+    }
+
+    &__description {
+      font: {
+        size: 1.5em;
+        weight: 600;
+        family: $base-font;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      margin-left: 2px;
+    }
+  }
+}
